@@ -2,28 +2,76 @@
 {
   "placeholderImages": [
     {
-      "id": "hero-delivery",
-      "description": "A delivery motorcycle or van moving through a city street.",
-      "imageUrl": "https://picsum.photos/seed/envios-1/1200/800",
-      "imageHint": "delivery motorcycle"
+      "id": "brand-logo",
+      "description": "Envíos DosRuedas Brand Logo",
+      "imageUrl": "https://picsum.photos/seed/logo/200/100",
+      "imageHint": "company logo"
     },
     {
-      "id": "warehouse-logistics",
-      "description": "Modern warehouse with shelves and high-tech management.",
-      "imageUrl": "https://picsum.photos/seed/envios-2/800/600",
-      "imageHint": "warehouse logistics"
+      "id": "hero-bg",
+      "description": "Modern city logistics map background",
+      "imageUrl": "https://picsum.photos/seed/hero-logistics/1920/1080",
+      "imageHint": "logistics map"
     },
     {
-      "id": "tracking-map",
-      "description": "Digital map showing a delivery route.",
-      "imageUrl": "https://picsum.photos/seed/envios-3/800/600",
-      "imageHint": "gps map"
+      "id": "vision-map",
+      "description": "Digital routing map on tablet",
+      "imageUrl": "https://picsum.photos/seed/route-map/800/600",
+      "imageHint": "gps route"
     },
     {
-      "id": "e-commerce-package",
-      "description": "Someone holding a cardboard package with a smile.",
-      "imageUrl": "https://picsum.photos/seed/envios-4/600/400",
+      "id": "cta-bg",
+      "description": "Abstract geometric tech background",
+      "imageUrl": "https://picsum.photos/seed/tech-bg/1200/600",
+      "imageHint": "abstract tech"
+    },
+    {
+      "id": "corp-plans",
+      "description": "Corporate logistics plans visualization",
+      "imageUrl": "https://picsum.photos/seed/corp/600/400",
+      "imageHint": "business logistics"
+    },
+    {
+      "id": "meli-flex",
+      "description": "MercadoLibre Flex integration visual",
+      "imageUrl": "https://picsum.photos/seed/flex/600/400",
+      "imageHint": "delivery flex"
+    },
+    {
+      "id": "ecommerce-logistics",
+      "description": "E-commerce distribution center",
+      "imageUrl": "https://picsum.photos/seed/ecommerce/600/400",
+      "imageHint": "warehouse package"
+    },
+    {
+      "id": "social-1",
+      "description": "Courier securing package",
+      "imageUrl": "https://picsum.photos/seed/s1/400/400",
       "imageHint": "delivery package"
+    },
+    {
+      "id": "social-2",
+      "description": "Logistics promo post",
+      "imageUrl": "https://picsum.photos/seed/s2/400/400",
+      "imageHint": "promo post"
+    },
+    {
+      "id": "social-3",
+      "description": "Motorcycle on urban route",
+      "imageUrl": "https://picsum.photos/seed/s3/400/400",
+      "imageHint": "motorcycle route"
+    },
+    {
+      "id": "social-4",
+      "description": "Community delivery post",
+      "imageUrl": "https://picsum.photos/seed/s4/400/400",
+      "imageHint": "happy customer"
+    },
+    {
+      "id": "social-5",
+      "description": "Daily dispatch visualization",
+      "imageUrl": "https://picsum.photos/seed/s5/400/400",
+      "imageHint": "delivery van"
     }
   ]
 }

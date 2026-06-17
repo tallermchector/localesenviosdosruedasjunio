@@ -1,33 +1,29 @@
+
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/sections/Hero";
-import { Tracking } from "@/components/sections/Tracking";
-import { QuoteEngine } from "@/components/sections/QuoteEngine";
+import { Vision } from "@/components/sections/Vision";
 import { Services } from "@/components/sections/Services";
-import { Chatbot } from "@/components/sections/Chatbot";
-import { Analytics } from "@/components/sections/Analytics";
-import { PartnerContact } from "@/components/sections/PartnerContact";
+import { FAQ } from "@/components/sections/FAQ";
+import { CTA } from "@/components/sections/CTA";
+import { CorporateSolutions } from "@/components/sections/CorporateSolutions";
+import { CapabilitiesSlider } from "@/components/sections/CapabilitiesSlider";
+import { Testimonials } from "@/components/sections/Testimonials";
+import { SocialGallery } from "@/components/sections/SocialGallery";
 import { Footer } from "@/components/sections/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen selection:bg-accent selection:text-accent-foreground">
       <Navigation />
       <Hero />
-      <div className="border-y-4 border-black bg-accent py-4 overflow-hidden whitespace-nowrap">
-        <div className="flex animate-marquee gap-8 font-headline text-2xl uppercase">
-          {[1,2,3,4,5,6].map(i => (
-            <span key={i} className="flex items-center gap-4">
-              Logística Inteligente MDP • Entregas Express • 3PL Solutions • API Integration • E-commerce Ready • Mar del Plata y Zona •
-            </span>
-          ))}
-        </div>
-      </div>
-      <Tracking />
-      <QuoteEngine />
+      <Vision />
       <Services />
-      <Analytics />
-      <Chatbot />
-      <PartnerContact />
+      <FAQ />
+      <CTA />
+      <CorporateSolutions />
+      <CapabilitiesSlider />
+      <Testimonials />
+      <SocialGallery />
       <Footer />
     </main>
   );
