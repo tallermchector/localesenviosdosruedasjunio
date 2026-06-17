@@ -1,55 +1,35 @@
-
 "use client";
 
-import { Zap, Microchip, ShieldCheck, BarChart3 } from "lucide-react";
+import { Bolt, Microchip, ShieldHalf, ChartLine } from "lucide-react";
 
 const caps = [
-  {
-    title: "Ruteo Inteligente",
-    desc: "Optimización en tiempo real para minimizar tiempos and costos.",
-    icon: <Zap />
-  },
-  {
-    title: "Integración API",
-    desc: "Conexión directa con tu tienda online sin fricciones.",
-    icon: <Microchip />
-  },
-  {
-    title: "Seguridad Extrema",
-    desc: "Protocolos estrictos de custodia y seguros de cobertura total.",
-    icon: <ShieldCheck />
-  },
-  {
-    title: "Métricas en Vivo",
-    desc: "Dashboard analítico con datos precisos de performance.",
-    icon: <BarChart3 />
-  }
+  { title: "Ruteo Inteligente", icon: <Bolt className="w-8 h-8" />, desc: "Optimización en tiempo real de rutas de entrega para minimizar tiempos y costos operativos." },
+  { title: "Integración API", icon: <Microchip className="w-8 h-8" />, desc: "Conexión directa con tu tienda online para automatizar la gestión de despachos sin fricción." },
+  { title: "Seguridad Extrema", icon: <ShieldHalf className="w-8 h-8" />, desc: "Protocolos estrictos de custodia de mercadería y seguros de cobertura total para tu tranquilidad." },
+  { title: "Métricas en Vivo", icon: <ChartLine className="w-8 h-8" />, desc: "Dashboard analítico con datos precisos de performance y tiempos de entrega en tiempo real." }
 ];
 
 export function CapabilitiesSlider() {
   return (
-    <section className="py-24 bg-primary text-white overflow-hidden">
-      <div className="container max-w-7xl mx-auto px-4 mb-16">
-        <div className="section-header space-y-4">
-          <div className="section-badge border-white/20 text-white bg-white/10">Capacidades Dinámicas</div>
-          <h2 className="text-5xl text-white font-headline">Soluciones a Medida</h2>
-          <p className="text-xl text-white/70 max-w-2xl">
-            Hemos redefinido los estándares de la logística urbana para ofrecerte una ventaja competitiva real.
-          </p>
+    <section className="slider-section py-24 bg-primary text-white">
+      <div className="container mx-auto px-8">
+        <div className="mb-16 space-y-4">
+          <div className="inline-flex items-center bg-white/10 text-white border border-white/30 px-5 py-2 rounded-full font-subheadline text-[1.2rem] tracking-wider font-bold">CAPACIDADES DINÁMICAS</div>
+          <h2 className="text-white font-headline">SOLUCIONES A MEDIDA</h2>
+          <p className="text-white opacity-90 max-w-[700px]">Hemos redefinido los estándares de la logística urbana para ofrecerte una ventaja competitiva real.</p>
         </div>
-      </div>
-
-      <div className="flex gap-8 px-4 overflow-x-auto pb-8 scrollbar-hide md:justify-center">
-        {caps.map((cap, i) => (
-          <div key={i} className="min-w-[300px] md:min-w-0 md:flex-1 bg-white/5 border border-white/10 p-10 space-y-6 hover:bg-white/10 hover:border-accent hover:-translate-y-2 transition-all duration-300 group relative">
-            <div className="w-14 h-14 bg-secondary rounded-full flex items-center justify-center text-white text-2xl group-hover:bg-accent group-hover:text-primary transition-all duration-500">
-              {cap.icon}
+        
+        <div className="flex overflow-x-auto snap-x snap-mandatory gap-8 pb-8 scrollbar-thin scrollbar-thumb-accent scrollbar-track-white/10">
+          {caps.map((c, i) => (
+            <div key={i} className="flex-[0_0_85%] md:flex-[0_0_45%] lg:flex-[0_0_23%] snap-start bg-white/5 border border-white/10 p-12 transition-all duration-300 hover:bg-white/10 hover:-translate-y-[10px] hover:border-accent hover:shadow-2xl relative group after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
+              <div className="cap-icon w-[60px] h-[60px] rounded-full bg-secondary text-white flex items-center justify-center text-2xl mb-6 group-hover:scale-115 group-hover:rotate-12 group-hover:bg-accent group-hover:text-primary transition-all duration-500">
+                {c.icon}
+              </div>
+              <h3 className="text-accent text-[1.6rem] mb-4 font-headline uppercase">{c.title}</h3>
+              <p className="text-white opacity-90 leading-relaxed">{c.desc}</p>
             </div>
-            <h3 className="text-2xl font-headline text-accent">{cap.title}</h3>
-            <p className="text-white/80">{cap.desc}</p>
-            <div className="absolute bottom-0 left-0 h-1 bg-accent w-0 group-hover:w-full transition-all duration-500" />
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -3,7 +3,6 @@ import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/sections/Hero";
 import { Vision } from "@/components/sections/Vision";
 import { Services } from "@/components/sections/Services";
-import { FAQ } from "@/components/sections/FAQ";
 import { CTA } from "@/components/sections/CTA";
 import { CorporateSolutions } from "@/components/sections/CorporateSolutions";
 import { CapabilitiesSlider } from "@/components/sections/CapabilitiesSlider";
@@ -13,12 +12,11 @@ import { Footer } from "@/components/sections/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen selection:bg-accent selection:text-accent-foreground">
+    <main className="min-h-screen selection:bg-accent selection:text-dark">
       <Navigation />
       <Hero />
       <Vision />
       <Services />
-      <FAQ />
       <CTA />
       <CorporateSolutions />
       <CapabilitiesSlider />

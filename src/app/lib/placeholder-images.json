@@ -3,75 +3,75 @@
   "placeholderImages": [
     {
       "id": "brand-logo",
-      "description": "Envíos DosRuedas Brand Logo",
-      "imageUrl": "https://picsum.photos/seed/logo/200/100",
+      "description": "Envíos DosRuedas Logo",
+      "imageUrl": "resources/aAjZbwdv-KGfMdCfT3y4Kj",
       "imageHint": "company logo"
     },
     {
       "id": "hero-bg",
-      "description": "Modern city logistics map background",
-      "imageUrl": "https://picsum.photos/seed/hero-logistics/1920/1080",
-      "imageHint": "logistics map"
+      "description": "Logistics City Map Hero",
+      "imageUrl": "resources/a9qSjwlZ7cefb7cizHHkm-",
+      "imageHint": "city map"
     },
     {
       "id": "vision-map",
-      "description": "Digital routing map on tablet",
-      "imageUrl": "https://picsum.photos/seed/route-map/800/600",
-      "imageHint": "gps route"
+      "description": "Logistics Coverage Map",
+      "imageUrl": "resources/bmQcUMs5EU86j5sgCJl_x3",
+      "imageHint": "route map"
     },
     {
       "id": "cta-bg",
-      "description": "Abstract geometric tech background",
-      "imageUrl": "https://picsum.photos/seed/tech-bg/1200/600",
-      "imageHint": "abstract tech"
+      "description": "Abstract Tech Background",
+      "imageUrl": "resources/aDC-m8qZ91F4iv1AmrW_vS",
+      "imageHint": "abstract geometric"
     },
     {
-      "id": "corp-plans",
-      "description": "Corporate logistics plans visualization",
-      "imageUrl": "https://picsum.photos/seed/corp/600/400",
-      "imageHint": "business logistics"
+      "id": "corp-1",
+      "description": "Soluciones Corporativas",
+      "imageUrl": "resources/auHzaMFScwRfa6f8eT8_cX",
+      "imageHint": "office building"
     },
     {
-      "id": "meli-flex",
-      "description": "MercadoLibre Flex integration visual",
-      "imageUrl": "https://picsum.photos/seed/flex/600/400",
-      "imageHint": "delivery flex"
+      "id": "corp-2",
+      "description": "Envíos Flex",
+      "imageUrl": "resources/bSarC8GVoRO4BjG_G4ROIr",
+      "imageHint": "delivery box"
     },
     {
-      "id": "ecommerce-logistics",
-      "description": "E-commerce distribution center",
-      "imageUrl": "https://picsum.photos/seed/ecommerce/600/400",
-      "imageHint": "warehouse package"
+      "id": "corp-3",
+      "description": "Logística E-Commerce",
+      "imageUrl": "resources/brbGQiFjedd1sjtRqxQ_Dl",
+      "imageHint": "laptop distribution"
     },
     {
       "id": "social-1",
-      "description": "Courier securing package",
-      "imageUrl": "https://picsum.photos/seed/s1/400/400",
-      "imageHint": "delivery package"
+      "description": "Social Post 1",
+      "imageUrl": "resources/9uqImJ8rV8RevmhuX7m4M0",
+      "imageHint": "courier hands"
     },
     {
       "id": "social-2",
-      "description": "Logistics promo post",
-      "imageUrl": "https://picsum.photos/seed/s2/400/400",
-      "imageHint": "promo post"
+      "description": "Social Post 2",
+      "imageUrl": "resources/87w9mIEHzJJ4KnONh424qf",
+      "imageHint": "promotion post"
     },
     {
       "id": "social-3",
-      "description": "Motorcycle on urban route",
-      "imageUrl": "https://picsum.photos/seed/s3/400/400",
-      "imageHint": "motorcycle route"
+      "description": "Social Post 3",
+      "imageUrl": "resources/8ABUMGlR7jB3OJgSw-M_Df",
+      "imageHint": "motorcycle wheel"
     },
     {
       "id": "social-4",
-      "description": "Community delivery post",
-      "imageUrl": "https://picsum.photos/seed/s4/400/400",
-      "imageHint": "happy customer"
+      "description": "Social Post 4",
+      "imageUrl": "resources/aBLv2uSUlYX23t6d9jvkNs",
+      "imageHint": "community post"
     },
     {
       "id": "social-5",
-      "description": "Daily dispatch visualization",
-      "imageUrl": "https://picsum.photos/seed/s5/400/400",
-      "imageHint": "delivery van"
+      "description": "Social Post 5",
+      "imageUrl": "resources/8C68LBXNqOu5mZ5lOeJ4bY",
+      "imageHint": "dispatch post"
     }
   ]
 }

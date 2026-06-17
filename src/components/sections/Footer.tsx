@@ -2,95 +2,85 @@
 "use client";
 
 import Link from "next/link";
-import { Truck, MapPin, Phone, Mail, Instagram, Facebook, ShieldCheck, Zap, Globe, ArrowUpRight } from "lucide-react";
+import { Instagram, Facebook, MapPin, Phone, Mail, ShieldHalf, Bolt, Globe, Radio } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer id="contacto" className="bg-primary text-white pt-24 pb-12 border-t-4 border-accent">
-      <div className="container max-w-7xl mx-auto px-4">
+    <footer id="contacto" className="bg-primary text-white pt-20 pb-8 border-t-4 border-accent">
+      <div className="container mx-auto px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          <div className="space-y-6">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                <Truck className="text-primary w-6 h-6" />
-              </div>
-              <h3 className="text-3xl font-headline">DosRuedas</h3>
-            </div>
-            <p className="text-accent font-medium lowercase tracking-wider text-sm -mt-4 italic">tu solución confiable</p>
-            <p className="text-slate-300 font-medium">
-              Líderes en logística de última milla para e-commerce en Mar del Plata. Velocidad, confianza y tecnología aplicada al transporte.
-            </p>
+          {/* Brand Col */}
+          <div className="footer-col">
+            <img src="resources/aAjZbwdv-KGfMdCfT3y4Kj" alt="Envíos DosRuedas Logo" className="h-[50px] mb-4 transition-transform hover:scale-105" />
+            <h3 className="text-white mb-0 font-headline text-[1.8rem]">Envíos DosRuedas</h3>
+            <p className="text-accent text-[0.95rem] mb-6 tracking-[0.5px]">tu solución confiable</p>
+            <p className="text-white/80 leading-relaxed mb-6">La mensajería y logística de última milla líder en Mar del Plata, impulsando el crecimiento de negocios locales con tecnología y precisión.</p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 bg-white/10 flex items-center justify-center rounded-full hover:bg-accent hover:text-primary transition-all">
+              <a href="#" target="_blank" className="w-11 h-11 bg-white/10 flex items-center justify-center rounded-full transition-all hover:bg-accent hover:text-primary hover:-translate-y-1 hover:scale-115">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 flex items-center justify-center rounded-full hover:bg-accent hover:text-primary transition-all">
+              <a href="#" target="_blank" className="w-11 h-11 bg-white/10 flex items-center justify-center rounded-full transition-all hover:bg-accent hover:text-primary hover:-translate-y-1 hover:scale-115">
                 <Facebook className="w-5 h-5" />
               </a>
             </div>
           </div>
 
-          <div>
-            <h4 className="text-2xl font-subheadline text-accent mb-8">Nosotros</h4>
-            <ul className="space-y-4 font-body">
-              {["Sobre Nosotros", "FAQ", "Redes"].map((link) => (
-                <li key={link}>
-                  <Link href={`#${link.toLowerCase()}`} className="text-slate-300 hover:text-accent flex items-center gap-2 group">
-                    <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-all" />
-                    {link}
-                  </Link>
-                </li>
-              ))}
+          {/* Nav Col */}
+          <div className="footer-col">
+            <h4 className="font-subheadline text-2xl text-accent mb-8 uppercase tracking-wider">Nosotros</h4>
+            <ul className="list-none space-y-3">
+              <li><Link href="#" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block relative">Sobre Nosotros</Link></li>
+              <li><Link href="#" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block relative">Preguntas Frecuentes</Link></li>
+              <li><Link href="#" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block relative">Nuestras Redes</Link></li>
             </ul>
           </div>
 
-          <div>
-            <h4 className="text-2xl font-subheadline text-accent mb-8">Servicios</h4>
-            <ul className="space-y-4 font-body">
-              {["Envíos Express", "Envíos LowCost", "Envíos Flex (MeLi)", "E-Commerce & 3PL"].map((link) => (
-                <li key={link}>
-                  <Link href="#servicios" className="text-slate-300 hover:text-accent flex items-center gap-2 group">
-                    <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-all" />
-                    {link}
-                  </Link>
-                </li>
-              ))}
+          {/* Services Col */}
+          <div className="footer-col">
+            <h4 className="font-subheadline text-2xl text-accent mb-8 uppercase tracking-wider">Servicios</h4>
+            <ul className="list-none space-y-3">
+              <li><Link href="#" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block">Envíos Express</Link></li>
+              <li><Link href="#" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block">Envíos LowCost</Link></li>
+              <li><Link href="#" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block">Envíos Flex (MeLi)</Link></li>
+              <li><Link href="#" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block">E-Commerce & 3PL</Link></li>
             </ul>
           </div>
 
-          <div className="space-y-6">
-            <h4 className="text-2xl font-subheadline text-accent mb-8">Contacto</h4>
-            <div className="space-y-4 text-slate-300 font-medium">
-              <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-accent shrink-0" />
-                <span>Friuli 1972, Mar del Plata<br />Buenos Aires, AR</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-accent shrink-0" />
-                <span>+54 9 223 660-2699</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-accent shrink-0" />
-                <span className="text-xs break-all">matiascejas@enviosdosruedas.com</span>
-              </div>
+          {/* Contact Col */}
+          <div className="footer-col">
+            <h4 className="font-subheadline text-2xl text-accent mb-8 uppercase tracking-wider">Contacto</h4>
+            <div className="space-y-4 text-white/80">
+              <p className="flex items-start gap-4 transition-colors hover:text-accent">
+                <MapPin className="w-5 h-5 text-accent shrink-0" /> Friuli 1972, Mar del Plata<br/>Buenos Aires, AR
+              </p>
+              <p className="flex items-center gap-4 transition-colors hover:text-accent">
+                <Phone className="w-5 h-5 text-accent shrink-0" /> +54 9 2236 60-2699
+              </p>
+              <p className="flex items-center gap-4 transition-colors hover:text-accent">
+                <Mail className="w-5 h-5 text-accent shrink-0" /> matiascejas@enviosdosruedas.com
+              </p>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-12 py-12 border-y border-white/10 mb-8">
-          <div className="flex items-center gap-2 font-subheadline text-2xl text-accent">
-            <ShieldCheck className="w-6 h-6" /> SEGURIDAD CERTIFICADA
-          </div>
-          <div className="flex items-center gap-2 font-subheadline text-2xl text-accent">
-            <Zap className="w-6 h-6" /> VELOCIDAD MÁXIMA
-          </div>
-          <div className="flex items-center gap-2 font-subheadline text-2xl text-accent">
+        {/* Trust Banners */}
+        <div className="flex flex-wrap justify-center gap-10 py-12 border-y border-white/10 mb-8">
+          <span className="flex items-center gap-3 font-subheadline text-[1.3rem] tracking-wider text-accent transition-transform hover:scale-105 hover:-translate-y-[3px]">
+            <ShieldHalf className="w-6 h-6" /> SEGURIDAD CERTIFICADA
+          </span>
+          <span className="flex items-center gap-3 font-subheadline text-[1.3rem] tracking-wider text-accent transition-transform hover:scale-105 hover:-translate-y-[3px]">
+            <Bolt className="w-6 h-6" /> VELOCIDAD MÁXIMA
+          </span>
+          <span className="flex items-center gap-3 font-subheadline text-[1.3rem] tracking-wider text-accent transition-transform hover:scale-105 hover:-translate-y-[3px]">
             <Globe className="w-6 h-6" /> COBERTURA DISTRITAL
-          </div>
+          </span>
+          <span className="flex items-center gap-3 font-subheadline text-[1.3rem] tracking-wider text-accent transition-transform hover:scale-105 hover:-translate-y-[3px]">
+            <Radio className="w-6 h-6" /> STATUS ONLINE
+          </span>
         </div>
 
-        <div className="text-center text-slate-500 text-sm font-bold">
-          <p>© 2026 ENVIOS DOSRUEDAS. TODOS LOS DERECHOS RESERVADOS. | <Link href="#" className="hover:text-white">PRIVACIDAD</Link> | <Link href="#" className="hover:text-white">TÉRMINOS</Link></p>
+        <div className="text-center text-white/60 text-[0.9rem] pt-8 border-t border-white/10 font-bold">
+          <p>&copy; 2026 Envios DosRuedas. Todos los derechos reservados. | <Link href="#" className="hover:text-accent underline">Privacidad</Link> | <Link href="#" className="hover:text-accent underline">Términos</Link></p>
         </div>
       </div>
     </footer>

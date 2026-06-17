@@ -1,53 +1,42 @@
 
 "use client";
 
-import Image from "next/image";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Phone, Calculator, CheckCircle2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { CheckCircle2, Phone, Calculator, Bolt } from "lucide-react";
 
 export function CTA() {
-  const bgImage = PlaceHolderImages.find(img => img.id === 'cta-bg');
-
   return (
-    <section className="py-24 relative overflow-hidden bg-primary text-white text-center">
-      <div className="absolute inset-0 z-0">
-        <Image 
-          src={bgImage?.imageUrl || ""} 
-          alt="CTA background"
-          fill
-          className="object-cover opacity-20 scale-110 animate-[zoom_25s_linear_infinite_alternate]"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-slate-950/90 to-primary/80" />
-      </div>
-
-      <div className="container max-w-4xl mx-auto px-4 relative z-10">
-        <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-12 rounded-[2.5rem] shadow-2xl space-y-8">
-          <div className="inline-flex items-center gap-2 bg-accent/20 text-accent rounded-full px-6 py-1 font-subheadline text-xl border border-accent/40">
-            ¡Empezá Ahora!
+    <section className="cta-section relative py-32 bg-primary text-white text-center overflow-hidden">
+      <div 
+        className="absolute inset-0 z-0 opacity-20 animate-slow-zoom" 
+        style={{ 
+          backgroundImage: "url('resources/aDC-m8qZ91F4iv1AmrW_vS')", 
+          backgroundSize: 'cover', 
+          backgroundPosition: 'center' 
+        }} 
+      />
+      
+      <div className="container mx-auto px-8 relative z-10">
+        <div className="cta-wrapper max-w-[800px] mx-auto border border-white/10 p-16 bg-gradient-to-br from-primary/80 to-[#0f172a]/90 backdrop-blur-md rounded-[20px] shadow-[inset_0_0_50px_rgba(0,0,0,0.5)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[inset_0_0_50px_rgba(0,0,0,0.5),0_25px_50px_rgba(0,0,0,0.4)]">
+          <div className="inline-flex items-center gap-2 bg-accent/20 text-accent border border-accent/40 px-5 py-2 rounded-full font-subheadline text-[1.2rem] tracking-wider mb-6">
+            <Bolt className="w-5 h-5" /> ¡Empezá Ahora!
           </div>
           
-          <h2 className="text-5xl md:text-6xl text-white font-headline">
-            ¿Listo para escalar la logística de tu E-Commerce?
-          </h2>
+          <h2 className="text-white my-6 font-headline text-[3.5rem]">¿Listo para escalar la logística de tu E-Commerce?</h2>
+          <p className="text-white text-[1.2rem] mb-10 opacity-90">Olvidate de la gestión de paquetes y enfocate en vender más. Dejá la distribución urbana en manos de expertos.</p>
           
-          <p className="text-xl text-white/80 font-medium">
-            Olvidate de la gestión de paquetes y enfocate en vender más. Dejá la distribución urbana en manos de los expertos.
-          </p>
-          
-          <div className="flex flex-wrap justify-center gap-4">
-            <Button className="brutalist-button h-16 text-2xl px-10">
-              <Phone className="w-6 h-6" /> Contactanos por WhatsApp
-            </Button>
-            <Button variant="outline" className="secondary-button h-16 text-2xl px-10 border-white text-white hover:bg-white hover:text-primary">
+          <div className="flex flex-wrap justify-center gap-6 mb-12">
+            <a href="https://api.whatsapp.com/send/?phone=5492236602699" target="_blank" className="btn btn-primary">
+              <img src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/svgs/brands/whatsapp.svg" className="w-6 h-6 fill-current" /> Contactanos por WhatsApp
+            </a>
+            <a href="/tarifas" className="btn btn-secondary">
               <Calculator className="w-6 h-6" /> Ver Tarifas 2026
-            </Button>
+            </a>
           </div>
-
+          
           <div className="flex flex-wrap justify-center gap-8 pt-8 border-t border-white/10">
-            {["Confianza local comprobada", "Innovación en última milla", "Flota de motos dedicada"].map((item, i) => (
-              <div key={i} className="flex items-center gap-2 text-white/70 hover:text-accent transition-colors font-medium">
-                <CheckCircle2 className="w-5 h-5 text-accent" /> {item}
+            {["Confianza local comprobada", "Innovación constante en última milla", "Motocicletas dedicadas"].map((p, i) => (
+              <div key={i} className="flex items-center gap-3 text-[0.95rem] opacity-80 hover:opacity-100 hover:text-accent hover:-translate-y-[3px] transition-all cursor-default">
+                <CheckCircle2 className="w-5 h-5 text-accent" /> {p}
               </div>
             ))}
           </div>
