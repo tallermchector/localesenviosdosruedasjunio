@@ -11,7 +11,7 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Col */}
           <div className="footer-col">
-            <img src="resources/aAjZbwdv-KGfMdCfT3y4Kj" alt="Envíos DosRuedas Logo" className="h-[50px] mb-4 transition-transform hover:scale-105" />
+            <img src="/logo_envios.webp" alt="Envíos DosRuedas Logo" className="h-[50px] mb-4 transition-transform hover:scale-105" />
             <h3 className="text-white mb-0 font-headline text-[1.8rem]">Envíos DosRuedas</h3>
             <p className="text-accent text-[0.95rem] mb-6 tracking-[0.5px]">tu solución confiable</p>
             <p className="text-white/80 leading-relaxed mb-6">La mensajería y logística de última milla líder en Mar del Plata, impulsando el crecimiento de negocios locales con tecnología y precisión.</p>

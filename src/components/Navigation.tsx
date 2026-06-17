@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -25,7 +26,7 @@ export function Navigation() {
       <div className="container mx-auto px-8 flex justify-between items-center h-full">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-4 group no-underline">
-          <img src="resources/aAjZbwdv-KGfMdCfT3y4Kj" alt="Envíos DosRuedas Logo" className="h-[60px] w-auto object-contain transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110" />
+          <img src="/logo_envios.webp" alt="Envíos DosRuedas Logo" className="h-[60px] w-auto object-contain transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110" />
           <div className="flex flex-col brand-text hidden sm:flex">
             <span className="font-headline text-2xl text-white leading-none uppercase">Envíos Dosruedas</span>
             <span className="text-accent text-[0.85rem] font-medium lowercase tracking-[0.5px]">tu solución confiable</span>
