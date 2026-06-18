@@ -38,7 +38,7 @@ export function PlanInformation() {
             <div className="aspect-[4/5] bg-slate-100 rounded-[40px] overflow-hidden border-4 border-slate-100 shadow-2xl relative group">
               <div className="absolute inset-0 bg-primary/5 group-hover:bg-transparent transition-colors z-10" />
               <Image 
-                src="https://picsum.photos/seed/3pl-logistics/800/1000" 
+                src="/images/logistica-ecommerce.jpg"
                 alt="3PL Warehouse MDP" 
                 fill
                 className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"

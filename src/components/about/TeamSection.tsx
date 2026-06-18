@@ -11,12 +11,12 @@ export function TeamSection() {
           <div className="order-2 lg:order-1 relative">
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <Image src="https://picsum.photos/seed/team1/400/400" alt="Team 1" width={400} height={400} className="rounded-2xl border-2 border-slate-100 grayscale hover:grayscale-0 transition-all duration-500" data-ai-hint="professional worker" />
-                <Image src="https://picsum.photos/seed/team2/400/600" alt="Team 2" width={400} height={600} className="rounded-2xl border-2 border-slate-100 grayscale hover:grayscale-0 transition-all duration-500" data-ai-hint="courier professional" />
+                <Image src="/images/carousel_1.jpg" alt="Team 1" width={400} height={400} className="rounded-2xl border-2 border-slate-100 grayscale hover:grayscale-0 transition-all duration-500" data-ai-hint="professional worker" />
+                <Image src="/images/carousel_2.jpg" alt="Team 2" width={400} height={600} className="rounded-2xl border-2 border-slate-100 grayscale hover:grayscale-0 transition-all duration-500" data-ai-hint="courier professional" />
               </div>
               <div className="space-y-4 pt-8">
-                <Image src="https://picsum.photos/seed/team3/400/600" alt="Team 3" width={400} height={600} className="rounded-2xl border-2 border-slate-100 grayscale hover:grayscale-0 transition-all duration-500" data-ai-hint="logistics expert" />
-                <Image src="https://picsum.photos/seed/team4/400/400" alt="Team 4" width={400} height={400} className="rounded-2xl border-2 border-slate-100 grayscale hover:grayscale-0 transition-all duration-500" data-ai-hint="office manager" />
+                <Image src="/images/carousel_3.jpg" alt="Team 3" width={400} height={600} className="rounded-2xl border-2 border-slate-100 grayscale hover:grayscale-0 transition-all duration-500" data-ai-hint="logistics expert" />
+                <Image src="/images/carousel_4.jpg" alt="Team 4" width={400} height={400} className="rounded-2xl border-2 border-slate-100 grayscale hover:grayscale-0 transition-all duration-500" data-ai-hint="office manager" />
               </div>
             </div>
             <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-secondary/5 rounded-full blur-3xl" />

@@ -52,7 +52,7 @@ export function ExpressContent() {
             <div className="aspect-square bg-slate-100 rounded-[40px] overflow-hidden border-4 border-slate-100 shadow-2xl relative group">
               <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10" />
               <Image
-                src="https://picsum.photos/seed/express-log/800/800"
+                src="/nuevas/servicio_flex.jpeg"
                 alt="Servicio Express en MDP"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

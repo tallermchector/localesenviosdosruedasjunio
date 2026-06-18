@@ -53,7 +53,7 @@ export function WhoWeAre() {
           <div className="relative">
             <div className="relative z-10 p-4 bg-white border-2 border-dark shadow-[15px_15px_0px_rgba(15,23,42,1)] rounded-[32px] overflow-hidden rotate-2 hover:rotate-0 transition-transform duration-500">
               <Image 
-                src="https://picsum.photos/seed/envios-team/800/1000" 
+                src="/images/carousel_5.jpg"
                 alt="Equipo Envios DosRuedas" 
                 width={800} 
                 height={1000} 
