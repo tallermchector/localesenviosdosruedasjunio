@@ -1,8 +1,6 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-// Get a free hosted Postgres database in seconds: `npx create-db`
-
 generator client {
   provider = "prisma-client"
   output   = "../src/generated/prisma"
@@ -16,4 +14,35 @@ model User {
   id    Int     @id @default(autoincrement())
   email String  @unique
   name  String?
+}
+
+enum ServiceTypeEnum {
+  EXPRESS
+  LOW_COST
+  PUNTO_DE_RETIRO
+}
+
+enum OrderStatusEnum {
+  PENDIENTE
+  EN_CURSO
+  ENTREGADO
+  CANCELADO
+}
+
+model PriceRange {
+  id             String          @id @default(uuid())
+  serviceType    ServiceTypeEnum
+  distanciaMinKm Decimal         @db.Decimal(10, 2)
+  distanciaMaxKm Decimal         @db.Decimal(10, 2)
+  precioRango    Decimal         @db.Decimal(12, 2)
+  isActive       Boolean         @default(true)
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+  descripcion    String?
+  metadata       Json?
+  createdBy      String?
+  updatedBy      String?
+
+  @@unique([serviceType, distanciaMinKm, distanciaMaxKm])
+  @@index([serviceType, isActive])
 }
