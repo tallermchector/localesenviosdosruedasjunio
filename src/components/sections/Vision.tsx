@@ -12,10 +12,10 @@ export function Vision() {
           <div className="section-badge">
             <span className="pulse-dot" /> Partner Logístico Especializado
           </div>
-          
+
           <h2 className="text-primary">Nuestra Visión Logística</h2>
           <p className="text-xl max-w-[700px]">Transformamos tus costos fijos en solutions flexibles que acompañan el crecimiento de tu negocio.</p>
-          
+
           <div className="grid gap-8">
             <div className="flex items-start gap-6 group hover:translate-x-2 transition-transform duration-300">
               <div className="flex items-center justify-center w-[60px] h-[60px] bg-primary text-accent rounded-lg text-2xl shrink-0 transition-all duration-300 group-hover:bg-secondary group-hover:text-light group-hover:rotate-12 group-hover:scale-110">
@@ -26,7 +26,7 @@ export function Vision() {
                 <p>Puntualidad garantizada en cada envío</p>
               </div>
             </div>
-            
+
             <div className="flex items-start gap-6 group hover:translate-x-2 transition-transform duration-300">
               <div className="flex items-center justify-center w-[60px] h-[60px] bg-primary text-accent rounded-lg text-2xl shrink-0 transition-all duration-300 group-hover:bg-secondary group-hover:text-light group-hover:rotate-12 group-hover:scale-110">
                 <ShieldHalf className="w-8 h-8" />
@@ -58,7 +58,7 @@ export function Vision() {
           <div className="relative p-6 bg-white border-2 border-primary shadow-[15px_15px_0px_rgba(30,58,138,0.1)] transition-all duration-500 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[25px_25px_0px_rgba(30,58,138,0.2)] group">
             <div className="relative w-full h-[500px] overflow-hidden">
               <Image
-                src="https://picsum.photos/seed/envios-vision/1000/800"
+                src="/cards/card_mapa.webp"
                 alt="Mapa de cobertura"
                 fill
                 data-ai-hint="route map"

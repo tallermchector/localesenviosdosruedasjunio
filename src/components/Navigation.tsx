@@ -30,8 +30,8 @@ export function Navigation() {
             />
           </div>
           <div className="flex flex-col brand-text hidden xl:flex">
-            <span className="font-display text-2xl text-white leading-none uppercase">Envíos Dosruedas</span>
-            <span className="text-accent text-sm font-body lowercase tracking-[0.5px]">tu solución confiable</span>
+            <span className="font-display text-2xl text-white leading-none uppercase">ENVIOS DOSRUEDAS</span>
+            <span className="text-accent text-sm font-body uppercase tracking-[0.5px]">TU SOLUCION CONFIABLE</span>
           </div>
         </Link>
 
@@ -94,7 +94,7 @@ export function Navigation() {
       {mobileMenuOpen && (
         <div className="fixed inset-0 top-[90px] bg-primary z-[200] flex flex-col p-8 gap-6 overflow-y-auto lg:hidden animate-in slide-in-from-right duration-300">
           <Link href="/" onClick={() => setMobileMenuOpen(false)} className="font-display text-4xl text-white hover:text-accent border-b border-white/10 pb-2">Inicio</Link>
-          
+
           <div className="space-y-4">
             <p className="font-subhead text-2xl text-accent uppercase tracking-widest">Nosotros</p>
             <div className="flex flex-col gap-3 pl-4">
@@ -115,11 +115,11 @@ export function Navigation() {
           </div>
 
           <Link href="/contacto" onClick={() => setMobileMenuOpen(false)} className="font-display text-4xl text-white hover:text-accent border-b border-white/10 pb-2">Contacto</Link>
-          
+
           <div className="mt-auto pt-8 border-t border-white/10">
-             <a href="tel:+5492236602699" className="flex items-center gap-4 text-white text-2xl font-subhead tracking-widest">
-               <Phone className="text-accent w-8 h-8" /> +54 223 660-2699
-             </a>
+            <a href="tel:+5492236602699" className="flex items-center gap-4 text-white text-2xl font-subhead tracking-widest">
+              <Phone className="text-accent w-8 h-8" /> +54 223 660-2699
+            </a>
           </div>
         </div>
       )}

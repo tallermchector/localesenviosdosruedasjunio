@@ -5,11 +5,12 @@ import Image from "next/image";
 
 export function SocialGallery() {
   const posts = [
-    { id: 'social-post-1', url: 'https://picsum.photos/seed/envios-soc1/600/600', hint: 'courier hands' },
-    { id: 'social-post-2', url: 'https://picsum.photos/seed/envios-soc2/600/600', hint: 'promotion post' },
-    { id: 'social-post-3', url: 'https://picsum.photos/seed/envios-soc3/600/600', hint: 'motorcycle wheel' },
-    { id: 'social-post-4', url: 'https://picsum.photos/seed/envios-soc4/600/600', hint: 'community post' },
-    { id: 'social-post-5', url: 'https://picsum.photos/seed/envios-soc5/600/600', hint: 'dispatch post' },
+    { id: 'social-post-1', url: '/images/carousel_1.jpg', hint: 'courier hands' },
+    { id: 'social-post-2', url: '/hero/delivery_background.jpeg', hint: 'delivery background' },
+    { id: 'social-post-3', url: '/images/carousel_4.jpg', hint: 'carousel image 4' },
+    { id: 'social-post-4', url: '/redes/fac2.webp', hint: 'facebook community post' },
+    { id: 'social-post-5', url: '/redes/ig1.webp', hint: 'instagram promotion' },
+    { id: 'social-post-6', url: '/redes/ig4.webp', hint: 'instagram delivery update' },
   ];
 
   const allPosts = [...posts, ...posts];

@@ -10,7 +10,7 @@ export function Hero() {
       <div 
         className="absolute inset-0 z-0 animate-slow-zoom" 
         style={{ 
-          backgroundImage: "url('https://picsum.photos/seed/envios-hero/1920/1080')", 
+          backgroundImage: "url('/hero/hero_background.jpeg')", 
           backgroundSize: 'cover', 
           backgroundPosition: 'center' 
         }} 
