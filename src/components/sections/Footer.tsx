@@ -18,10 +18,10 @@ export function Footer() {
             <p className="text-accent text-sm mb-6 tracking-[0.5px]">tu solución confiable</p>
             <p className="text-white/80 leading-relaxed mb-6">La mensajería y logística de última milla líder en Mar del Plata, impulsando el crecimiento de negocios locales con tecnología y precisión.</p>
             <div className="flex gap-4">
-              <a href="#" className="w-12 h-12 bg-white/10 flex items-center justify-center rounded-full transition-all hover:bg-accent hover:text-primary hover:-translate-y-1">
+              <a href="https://instagram.com/enviosdosruedas" target="_blank" className="w-12 h-12 bg-white/10 flex items-center justify-center rounded-full transition-all hover:bg-accent hover:text-primary hover:-translate-y-1">
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="#" className="w-12 h-12 bg-white/10 flex items-center justify-center rounded-full transition-all hover:bg-accent hover:text-primary hover:-translate-y-1">
+              <a href="https://facebook.com/enviosdosruedas" target="_blank" className="w-12 h-12 bg-white/10 flex items-center justify-center rounded-full transition-all hover:bg-accent hover:text-primary hover:-translate-y-1">
                 <Facebook className="w-6 h-6" />
               </a>
             </div>
@@ -31,9 +31,9 @@ export function Footer() {
           <div>
             <h4 className="font-subhead text-2xl text-accent mb-8 uppercase tracking-wider">Nosotros</h4>
             <ul className="space-y-4">
-              <li><Link href="#" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block">Sobre Nosotros</Link></li>
-              <li><Link href="#" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block">Preguntas Frecuentes</Link></li>
-              <li><Link href="#" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block">Nuestras Redes</Link></li>
+              <li><Link href="/nosotros/sobre-nosotros" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block">Sobre Nosotros</Link></li>
+              <li><Link href="/nosotros/preguntas-frecuentes" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block">Preguntas Frecuentes</Link></li>
+              <li><Link href="/nosotros/nuestras-redes" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block">Nuestras Redes</Link></li>
             </ul>
           </div>
 
@@ -41,10 +41,10 @@ export function Footer() {
           <div>
             <h4 className="font-subhead text-2xl text-accent mb-8 uppercase tracking-wider">Servicios</h4>
             <ul className="space-y-4">
-              <li><Link href="#" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block">Envíos Express</Link></li>
-              <li><Link href="#" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block">Envíos LowCost</Link></li>
-              <li><Link href="#" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block">Envíos Flex (MeLi)</Link></li>
-              <li><Link href="#" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block">E-Commerce & 3PL</Link></li>
+              <li><Link href="/servicios/envios-express" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block">Envíos Express</Link></li>
+              <li><Link href="/servicios/envios-lowcost" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block">Envíos LowCost</Link></li>
+              <li><Link href="/servicios/enviosflex" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block">Envíos Flex (MeLi)</Link></li>
+              <li><Link href="/servicios/plan-emprendedores" className="text-white/80 hover:text-accent hover:translate-x-2 transition-all block">E-Commerce & 3PL</Link></li>
             </ul>
           </div>
 
@@ -82,7 +82,7 @@ export function Footer() {
         </div>
 
         <div className="text-center text-white/60 text-sm pt-8">
-          <p>&copy; 2026 Envios DosRuedas. Todos los derechos reservados. | <Link href="#" className="hover:text-accent underline">Privacidad</Link> | <Link href="#" className="hover:text-accent underline">Términos</Link></p>
+          <p>&copy; 2026 Envios DosRuedas. Todos los derechos reservados. | <Link href="/politica-de-privacidad" className="hover:text-accent underline">Privacidad</Link> | <Link href="/terminos-y-condiciones" className="hover:text-accent underline">Términos</Link></p>
         </div>
       </div>
     </footer>
