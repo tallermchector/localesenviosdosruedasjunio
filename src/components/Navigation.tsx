@@ -30,7 +30,7 @@ export function Navigation() {
             />
           </div>
           <div className="flex flex-col brand-text hidden xl:flex">
-            <span className="font-display text-2xl text-white leading-none">Envíos Dosruedas</span>
+            <span className="font-display text-2xl text-white leading-none uppercase">Envíos Dosruedas</span>
             <span className="text-accent text-sm font-body lowercase tracking-[0.5px]">tu solución confiable</span>
           </div>
         </Link>
@@ -59,10 +59,10 @@ export function Navigation() {
               Servicios <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
             </button>
             <div className="absolute top-full left-0 bg-primary min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-5 group-hover:translate-y-0 transition-all duration-300 border-t-[3px] border-accent shadow-2xl">
-              <Link href="/servicios/envios-express" className="block px-6 py-4 text-white text-lg font-body hover:text-accent hover:pl-8 transition-all border-b border-white/5 last:border-0">Envíos Express</Link>
-              <Link href="/servicios/envios-lowcost" className="block px-6 py-4 text-white text-lg font-body hover:text-accent hover:pl-8 transition-all border-b border-white/5 last:border-0">Envíos LowCost</Link>
-              <Link href="/servicios/enviosflex" className="block px-6 py-4 text-white text-lg font-body hover:text-accent hover:pl-8 transition-all border-b border-white/5 last:border-0">Envíos Flex</Link>
-              <Link href="/servicios/plan-emprendedores" className="block px-6 py-4 text-white text-lg font-body hover:text-accent hover:pl-8 transition-all border-b border-white/5 last:border-0">E-Commerce & 3PL</Link>
+              <Link href="/servicios/envios-express" className="block px-6 py-4 text-white text-lg font-body hover:text-accent hover:pl-8 transition-all border-b border-white/5 last:border-0 relative z-10 overflow-hidden after:absolute after:top-0 after:-left-full after:w-full after:h-full after:bg-white/5 hover:after:left-0 after:transition-all after:-z-10">Envíos Express</Link>
+              <Link href="/servicios/envios-lowcost" className="block px-6 py-4 text-white text-lg font-body hover:text-accent hover:pl-8 transition-all border-b border-white/5 last:border-0 relative z-10 overflow-hidden after:absolute after:top-0 after:-left-full after:w-full after:h-full after:bg-white/5 hover:after:left-0 after:transition-all after:-z-10">Envíos LowCost</Link>
+              <Link href="/servicios/enviosflex" className="block px-6 py-4 text-white text-lg font-body hover:text-accent hover:pl-8 transition-all border-b border-white/5 last:border-0 relative z-10 overflow-hidden after:absolute after:top-0 after:-left-full after:w-full after:h-full after:bg-white/5 hover:after:left-0 after:transition-all after:-z-10">Envíos Flex (MeLi)</Link>
+              <Link href="/servicios/plan-emprendedores" className="block px-6 py-4 text-white text-lg font-body hover:text-accent hover:pl-8 transition-all border-b border-white/5 last:border-0 relative z-10 overflow-hidden after:absolute after:top-0 after:-left-full after:w-full after:h-full after:bg-white/5 hover:after:left-0 after:transition-all after:-z-10">E-Commerce & 3PL</Link>
             </div>
           </div>
 
@@ -78,7 +78,7 @@ export function Navigation() {
           <a href="tel:+5492236602699" className="hidden xl:flex items-center gap-2 text-white font-subhead text-2xl tracking-widest hover:text-accent transition-all hover:scale-105">
             <Phone className="w-6 h-6 text-accent animate-bounce" /> +54 223 660-2699
           </a>
-          <Link href="/cotizar" className="btn btn-primary h-12 flex items-center gap-2 text-xl px-6">
+          <Link href="/contacto" className="btn btn-primary h-12 flex items-center gap-2 text-xl px-6 rounded-lg transition-transform active:scale-95 shadow-[4px_4px_0px_rgba(0,0,0,0.1)]">
             <Calculator className="w-5 h-5" /> <span className="hidden sm:inline">Cotizar Envío</span>
           </Link>
           <button
@@ -92,12 +92,31 @@ export function Navigation() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 top-[90px] bg-primary z-[200] flex flex-col p-8 gap-8 animate-in slide-in-from-right lg:hidden">
-          <Link href="/" onClick={() => setMobileMenuOpen(false)} className="font-display text-4xl text-white hover:text-accent">Inicio</Link>
-          <Link href="/nosotros/sobre-nosotros" onClick={() => setMobileMenuOpen(false)} className="font-display text-4xl text-white hover:text-accent">Nosotros</Link>
-          <Link href="/servicios/envios-express" onClick={() => setMobileMenuOpen(false)} className="font-display text-4xl text-white hover:text-accent">Servicios</Link>
-          <Link href="/contacto" onClick={() => setMobileMenuOpen(false)} className="font-display text-4xl text-white hover:text-accent">Contacto</Link>
-          <div className="mt-auto">
+        <div className="fixed inset-0 top-[90px] bg-primary z-[200] flex flex-col p-8 gap-6 overflow-y-auto lg:hidden animate-in slide-in-from-right duration-300">
+          <Link href="/" onClick={() => setMobileMenuOpen(false)} className="font-display text-4xl text-white hover:text-accent border-b border-white/10 pb-2">Inicio</Link>
+          
+          <div className="space-y-4">
+            <p className="font-subhead text-2xl text-accent uppercase tracking-widest">Nosotros</p>
+            <div className="flex flex-col gap-3 pl-4">
+              <Link href="/nosotros/sobre-nosotros" onClick={() => setMobileMenuOpen(false)} className="font-body text-xl text-white hover:text-accent">Sobre Nosotros</Link>
+              <Link href="/nosotros/preguntas-frecuentes" onClick={() => setMobileMenuOpen(false)} className="font-body text-xl text-white hover:text-accent">Preguntas Frecuentes</Link>
+              <Link href="/nosotros/nuestras-redes" onClick={() => setMobileMenuOpen(false)} className="font-body text-xl text-white hover:text-accent">Nuestras Redes</Link>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <p className="font-subhead text-2xl text-accent uppercase tracking-widest">Servicios</p>
+            <div className="flex flex-col gap-3 pl-4">
+              <Link href="/servicios/envios-express" onClick={() => setMobileMenuOpen(false)} className="font-body text-xl text-white hover:text-accent">Envíos Express</Link>
+              <Link href="/servicios/envios-lowcost" onClick={() => setMobileMenuOpen(false)} className="font-body text-xl text-white hover:text-accent">Envíos LowCost</Link>
+              <Link href="/servicios/enviosflex" onClick={() => setMobileMenuOpen(false)} className="font-body text-xl text-white hover:text-accent">Envíos Flex (MeLi)</Link>
+              <Link href="/servicios/plan-emprendedores" onClick={() => setMobileMenuOpen(false)} className="font-body text-xl text-white hover:text-accent">E-Commerce & 3PL</Link>
+            </div>
+          </div>
+
+          <Link href="/contacto" onClick={() => setMobileMenuOpen(false)} className="font-display text-4xl text-white hover:text-accent border-b border-white/10 pb-2">Contacto</Link>
+          
+          <div className="mt-auto pt-8 border-t border-white/10">
              <a href="tel:+5492236602699" className="flex items-center gap-4 text-white text-2xl font-subhead tracking-widest">
                <Phone className="text-accent w-8 h-8" /> +54 223 660-2699
              </a>
