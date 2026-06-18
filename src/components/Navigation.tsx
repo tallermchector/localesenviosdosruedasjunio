@@ -25,6 +25,7 @@ export function Navigation() {
               src="/logo_envios.webp"
               alt="Envíos DosRuedas Logo"
               fill
+              sizes="(max-width: 768px) 60px, 60px"
               className="object-contain transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110"
               priority
             />

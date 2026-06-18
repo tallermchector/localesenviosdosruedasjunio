@@ -1,6 +1,21 @@
 
 import type { Metadata } from "next";
+import { Anton, Bebas_Neue } from "next/font/google";
 import "./globals.css";
+
+const anton = Anton({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-anton",
+  display: "swap",
+});
+
+const bebasNeue = Bebas_Neue({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-bebas",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Envíos DosRuedas | Logística E-commerce y Mensajería MDP",
@@ -14,12 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="scroll-smooth">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet" />
-      </head>
-      <body className="antialiased bg-background text-foreground transition-colors duration-300">
+      <body className={`${anton.variable} ${bebasNeue.variable} antialiased bg-background text-foreground transition-colors duration-300`}>
         {children}
       </body>
     </html>

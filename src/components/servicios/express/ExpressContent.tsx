@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Zap, Clock, ShieldCheck } from "lucide-react";
+import Image from "next/image";
 
 export function ExpressContent() {
   const features = [
@@ -46,14 +47,16 @@ export function ExpressContent() {
               ))}
             </div>
           </div>
-          
+
           <div className="relative">
             <div className="aspect-square bg-slate-100 rounded-[40px] overflow-hidden border-4 border-slate-100 shadow-2xl relative group">
               <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10" />
-              <img 
-                src="https://picsum.photos/seed/express-log/800/800" 
-                alt="Servicio Express en MDP" 
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"
+              <Image
+                src="https://picsum.photos/seed/express-log/800/800"
+                alt="Servicio Express en MDP"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"
                 data-ai-hint="motorcycle courier"
               />
               <div className="absolute bottom-10 left-10 right-10 bg-white/95 backdrop-blur-md p-8 border-2 border-primary rounded-2xl z-20 shadow-2xl transform translate-y-4 group-hover:translate-y-0 transition-transform">
