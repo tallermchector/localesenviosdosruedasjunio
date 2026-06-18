@@ -31,7 +31,7 @@ export function LowcostContent() {
             <div className="aspect-video bg-slate-100 rounded-[40px] overflow-hidden border-4 border-slate-100 shadow-2xl relative group">
               <div className="absolute inset-0 bg-secondary/10 group-hover:bg-transparent transition-colors z-10" />
               <Image 
-                src="https://picsum.photos/seed/lowcost-log/1000/800" 
+                src="/nuevas/box_card.jpeg"
                 alt="Logística LowCost en Mar del Plata" 
                 fill
                 className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"

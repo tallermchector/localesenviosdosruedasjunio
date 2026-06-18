@@ -10,67 +10,67 @@
     {
       "id": "hero-map-bg",
       "description": "High-contrast stylized city map for logistics background",
-      "imageUrl": "https://picsum.photos/seed/envios-hero/1920/1080",
+      "imageUrl": "/nuevas/banner_heroe.jpeg",
       "imageHint": "city map"
     },
     {
       "id": "vision-map",
       "description": "Digital map interface with logistics routes",
-      "imageUrl": "https://picsum.photos/seed/envios-vision/1000/800",
+      "imageUrl": "/cards/card_mapa.webp",
       "imageHint": "route map"
     },
     {
       "id": "cta-bg",
       "description": "Abstract geometric tech background with gradients",
-      "imageUrl": "https://picsum.photos/seed/envios-cta/1200/600",
+      "imageUrl": "/hero/abstracto_background.jpeg",
       "imageHint": "abstract geometric"
     },
     {
       "id": "corp-plans",
       "description": "Modern corporate warehouse or office environment",
-      "imageUrl": "https://picsum.photos/seed/envios-corp1/800/600",
+      "imageUrl": "/images/soluciones-corporativas.jpg",
       "imageHint": "office building"
     },
     {
       "id": "envios-flex",
       "description": "Delivery package with MercadoLibre style branding",
-      "imageUrl": "https://picsum.photos/seed/envios-corp2/800/600",
+      "imageUrl": "/images/envios-flex.jpg",
       "imageHint": "delivery box"
     },
     {
       "id": "ecommerce-logistics",
       "description": "Logistics operations on a laptop or digital device",
-      "imageUrl": "https://picsum.photos/seed/envios-corp3/800/600",
+      "imageUrl": "/images/logistica-ecommerce.jpg",
       "imageHint": "laptop distribution"
     },
     {
       "id": "social-post-1",
       "description": "Courier hands preparing a package",
-      "imageUrl": "https://picsum.photos/seed/envios-soc1/600/600",
+      "imageUrl": "/images/carousel_1.jpg",
       "imageHint": "courier hands"
     },
     {
       "id": "social-post-2",
       "description": "Modern logistics promotion post",
-      "imageUrl": "https://picsum.photos/seed/envios-soc2/600/600",
+      "imageUrl": "/images/carousel_2.jpg",
       "imageHint": "promotion post"
     },
     {
       "id": "social-post-3",
       "description": "Close-up of motorcycle wheel on asphalt",
-      "imageUrl": "https://picsum.photos/seed/envios-soc3/600/600",
+      "imageUrl": "/images/carousel_3.jpg",
       "imageHint": "motorcycle wheel"
     },
     {
       "id": "social-post-4",
       "description": "Logistics community building post",
-      "imageUrl": "https://picsum.photos/seed/envios-soc4/600/600",
+      "imageUrl": "/images/carousel_4.jpg",
       "imageHint": "community post"
     },
     {
       "id": "social-post-5",
       "description": "Warehouse dispatching operation",
-      "imageUrl": "https://picsum.photos/seed/envios-soc5/600/600",
+      "imageUrl": "/images/carousel_5.jpg",
       "imageHint": "dispatch post"
     }
   ]

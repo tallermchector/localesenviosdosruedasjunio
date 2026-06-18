@@ -64,6 +64,7 @@
     "@types/pg": "^8.20.0",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
+    "eslint": "^10.5.0",
     "genkit-cli": "^1.37.0",
     "postcss": "^8.5.15",
     "prisma": "^7.8.0",
