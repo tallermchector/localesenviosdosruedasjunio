@@ -15,9 +15,20 @@ export function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileMenuOpen]);
+
   return (
     <header className={`fixed top-0 left-0 w-full z-[300] flex items-center transition-all duration-300 bg-primary/95 backdrop-blur-xl border-b-2 border-accent h-[90px]`}>
-      <div className="container flex justify-between items-center h-full">
+      <div className="container px-4 sm:px-6 lg:px-8 flex justify-between items-center h-full">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-4 group no-underline">
           <div className="relative h-[60px] w-[60px]">
@@ -48,7 +59,7 @@ export function Navigation() {
             <button className="font-subhead text-2xl text-white uppercase tracking-wider flex items-center gap-1 hover:text-accent transition-colors">
               Nosotros <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
             </button>
-            <div className="absolute top-full left-0 bg-primary min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-5 group-hover:translate-y-0 transition-all duration-300 border-t-[3px] border-accent shadow-2xl">
+            <div className="absolute top-full left-0 bg-primary/95 backdrop-blur-md min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-5 group-hover:translate-y-0 transition-all duration-300 border-t-[3px] border-accent rounded-b-lg shadow-2xl">
               <Link href="/nosotros/sobre-nosotros" className="block px-6 py-4 text-white text-lg font-body hover:text-accent hover:pl-8 transition-all border-b border-white/5 last:border-0 relative z-10 overflow-hidden after:absolute after:top-0 after:-left-full after:w-full after:h-full after:bg-white/5 hover:after:left-0 after:transition-all after:-z-10">Sobre Nosotros</Link>
               <Link href="/nosotros/preguntas-frecuentes" className="block px-6 py-4 text-white text-lg font-body hover:text-accent hover:pl-8 transition-all border-b border-white/5 last:border-0 relative z-10 overflow-hidden after:absolute after:top-0 after:-left-full after:w-full after:h-full after:bg-white/5 hover:after:left-0 after:transition-all after:-z-10">Preguntas Frecuentes</Link>
               <Link href="/nosotros/nuestras-redes" className="block px-6 py-4 text-white text-lg font-body hover:text-accent hover:pl-8 transition-all border-b border-white/5 last:border-0 relative z-10 overflow-hidden after:absolute after:top-0 after:-left-full after:w-full after:h-full after:bg-white/5 hover:after:left-0 after:transition-all after:-z-10">Nuestras Redes</Link>
@@ -59,7 +70,7 @@ export function Navigation() {
             <button className="font-subhead text-2xl text-white uppercase tracking-wider flex items-center gap-1 hover:text-accent transition-colors">
               Servicios <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
             </button>
-            <div className="absolute top-full left-0 bg-primary min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-5 group-hover:translate-y-0 transition-all duration-300 border-t-[3px] border-accent shadow-2xl">
+            <div className="absolute top-full left-0 bg-primary/95 backdrop-blur-md min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-5 group-hover:translate-y-0 transition-all duration-300 border-t-[3px] border-accent rounded-b-lg shadow-2xl">
               <Link href="/servicios/envios-express" className="block px-6 py-4 text-white text-lg font-body hover:text-accent hover:pl-8 transition-all border-b border-white/5 last:border-0 relative z-10 overflow-hidden after:absolute after:top-0 after:-left-full after:w-full after:h-full after:bg-white/5 hover:after:left-0 after:transition-all after:-z-10">Envíos Express</Link>
               <Link href="/servicios/envios-lowcost" className="block px-6 py-4 text-white text-lg font-body hover:text-accent hover:pl-8 transition-all border-b border-white/5 last:border-0 relative z-10 overflow-hidden after:absolute after:top-0 after:-left-full after:w-full after:h-full after:bg-white/5 hover:after:left-0 after:transition-all after:-z-10">Envíos LowCost</Link>
               <Link href="/servicios/enviosflex" className="block px-6 py-4 text-white text-lg font-body hover:text-accent hover:pl-8 transition-all border-b border-white/5 last:border-0 relative z-10 overflow-hidden after:absolute after:top-0 after:-left-full after:w-full after:h-full after:bg-white/5 hover:after:left-0 after:transition-all after:-z-10">Envíos Flex (MeLi)</Link>
@@ -93,7 +104,7 @@ export function Navigation() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 top-[90px] bg-primary z-[200] flex flex-col p-8 gap-6 overflow-y-auto lg:hidden animate-in slide-in-from-right duration-300">
+        <div className="fixed inset-0 top-[90px] bg-primary/95 backdrop-blur-md z-[200] flex flex-col p-8 gap-6 overflow-y-auto lg:hidden animate-in slide-in-from-right duration-300">
           <Link href="/" onClick={() => setMobileMenuOpen(false)} className="font-display text-4xl text-white hover:text-accent border-b border-white/10 pb-2">Inicio</Link>
 
           <div className="space-y-4">
