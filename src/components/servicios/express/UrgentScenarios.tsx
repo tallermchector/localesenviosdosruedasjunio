@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import { FileText, Tool, Gift, PackageOpen } from "lucide-react";
+import { FileText, Wrench, Gift, PackageOpen } from "lucide-react";
 
 export function UrgentScenarios() {
   const scenarios = [
     { title: "Documentos Legales", icon: <FileText className="w-6 h-6" /> },
-    { title: "Repuestos Críticos", icon: <Tool className="w-6 h-6" /> },
+    { title: "Repuestos Críticos", icon: <Wrench className="w-6 h-6" /> },
     { title: "Regalos de Último Momento", icon: <Gift className="w-6 h-6" /> },
     { title: "Olvidos Urgentes", icon: <PackageOpen className="w-6 h-6" /> }
   ];
@@ -36,7 +36,7 @@ export function UrgentScenarios() {
               <a 
                 href="https://api.whatsapp.com/send/?phone=5492236602699" 
                 target="_blank"
-                className="btn bg-accent text-dark border-accent hover:bg-white hover:border-white transition-all shadow-none h-16 rounded-xl"
+                className="btn bg-accent text-dark border-accent hover:bg-white hover:border-white transition-all shadow-none h-16 rounded-xl px-12"
               >
                 Consultar por WhatsApp
               </a>
