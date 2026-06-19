@@ -6,12 +6,17 @@ import pluginNext from "@next/eslint-plugin-next/dist/index.js";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-export default defineConfig([{
-  plugins: {
-    '@next/next': pluginNext,
+export default defineConfig([
+  {
+    ignores: [".next/**", "node_modules/**", "dist/**"]
   },
-  rules: {
-    ...pluginNext.configs.recommended.rules,
-    ...pluginNext.configs['core-web-vitals'].rules,
-  },
-}]);
+  {
+    plugins: {
+      '@next/next': pluginNext,
+    },
+    rules: {
+      ...pluginNext.configs.recommended.rules,
+      ...pluginNext.configs['core-web-vitals'].rules,
+    },
+  }
+]);
