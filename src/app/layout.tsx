@@ -28,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="scroll-smooth">
-      <body className={`${anton.variable} ${bebasNeue.variable} antialiased bg-background text-foreground transition-colors duration-300`}>
+    <html lang="es" className="scroll-smooth" suppressHydrationWarning>
+      <body className={`${anton.variable} ${bebasNeue.variable} antialiased bg-background text-foreground transition-colors duration-300`} suppressHydrationWarning>
         {children}
       </body>
     </html>
