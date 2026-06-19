@@ -26,8 +26,8 @@ export function Navigation() {
     };
   }, [mobileMenuOpen]);
 
-  return (
-    <header className={`fixed top-0 left-0 w-full z-[300] flex items-center transition-all duration-300 bg-primary/95 backdrop-blur-xl border-b-2 border-accent h-[90px]`}>
+  return ( <>
+    <header className={`fixed top-0 left-0 w-full z-40 flex items-center transition-all duration-300 bg-primary/95 backdrop-blur-xl border-b-2 border-accent h-[90px]`}>
       <div className="container px-4 sm:px-6 lg:px-8 flex justify-between items-center h-full">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-4 group no-underline">
@@ -48,7 +48,7 @@ export function Navigation() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-8 h-full">
+        <nav className="hidden md:flex items-center gap-8 h-full">
           <div className="relative h-full flex items-center group">
             <Link href="/" className="font-subhead text-2xl text-white uppercase tracking-wider flex items-center gap-2 hover:text-accent transition-colors relative after:absolute after:w-full after:h-[2px] after:bottom-0 after:left-0 after:bg-accent after:origin-left after:scale-x-0 hover:after:scale-x-100 after:transition-transform">
               <House className="w-5 h-5" /> Inicio
@@ -95,16 +95,17 @@ export function Navigation() {
           </Link>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden text-white hover:text-accent transition-colors"
+            className="md:hidden flex items-center text-white hover:text-[#EAB308] transition-colors"
           >
-            {mobileMenuOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
+            {mobileMenuOpen ? <X className="w-8 h-8 text-[#EAB308]" /> : <Menu className="w-8 h-8" />}
           </button>
         </div>
       </div>
 
+    </header>
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 top-[90px] bg-primary/95 backdrop-blur-md z-[200] flex flex-col p-8 gap-6 overflow-y-auto lg:hidden animate-in slide-in-from-right duration-300">
+        <div className="fixed inset-0 top-[90px] bg-[#1E3A8A] z-50 flex flex-col p-8 gap-6 overflow-y-auto md:hidden animate-in slide-in-from-right duration-300">
           <Link href="/" onClick={() => setMobileMenuOpen(false)} className="font-display text-4xl text-white hover:text-accent border-b border-white/10 pb-2">Inicio</Link>
 
           <div className="space-y-4">
@@ -134,7 +135,6 @@ export function Navigation() {
             </a>
           </div>
         </div>
-      )}
-    </header>
+      )} </>
   );
 }
