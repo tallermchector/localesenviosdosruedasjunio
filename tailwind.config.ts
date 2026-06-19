@@ -41,10 +41,14 @@ export default {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
+        'primary-navy': '#111c38',
+        'primary-container': '#1E3A8A',
       },
       boxShadow: {
         brutal: '6px 6px 0px 0px rgba(234, 179, 8, 1)',
         'brutal-sm': '3px 3px 0px 0px rgba(0,0,0,1)',
+        neo: '4px 4px 0px 0px #111c38',
+        'neo-yellow': '4px 4px 0px 0px #EAB308',
       },
       keyframes: {
         fadeInUp: {
