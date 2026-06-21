@@ -1,0 +1,69 @@
+{
+  "colors": {
+    "primary": {
+      "value": "#1E3A8A",
+      "description": "Azul principal, usado en fondos oscuros y elementos principales",
+      "roles": ["background", "border", "text", "btn-hover"]
+    },
+    "secondary": {
+      "value": "#3B82F6",
+      "description": "Azul claro secundario, usado para detalles y contrastes",
+      "roles": ["text", "badge-border", "accent"]
+    },
+    "accent": {
+      "value": "#EAB308",
+      "description": "Amarillo acento, vital para el estilo neo-brutalista",
+      "roles": ["btn-primary", "box-shadow", "border"]
+    },
+    "light": {
+      "value": "#F8FAFC",
+      "description": "Fondo claro principal",
+      "roles": ["background", "card-bg"]
+    },
+    "dark": {
+      "value": "#0f172a",
+      "description": "Fondo oscuro absoluto",
+      "roles": ["text", "btn-primary-hover"]
+    },
+    "primary-navy": {
+      "value": "#111c38",
+      "description": "Azul marino oscuro para sombras neo-brutalistas",
+      "roles": ["box-shadow"]
+    }
+  },
+  "typography": {
+    "fontFamilies": {
+      "display": {
+        "value": "['Anton', 'sans-serif']",
+        "description": "Fuente para títulos principales"
+      },
+      "subhead": {
+        "value": "['Bebas Neue', 'sans-serif']",
+        "description": "Fuente para subtítulos y botones"
+      },
+      "body": {
+        "value": "['system-ui', '-apple-system', 'sans-serif']",
+        "description": "Fuente para párrafos y texto general"
+      }
+    },
+    "scales": {
+      "h1": "clamp(3rem,8vw,6rem)",
+      "h2": "clamp(2.5rem,5vw,4rem)",
+      "h3": "clamp(1.8rem,3vw,2.5rem)",
+      "p": "text-lg"
+    }
+  },
+  "spacing": {
+    "radius": {
+      "base": "0.5rem",
+      "brutalist": "0rem"
+    },
+    "container": "max-w-[1280px] mx-auto px-8"
+  },
+  "shadows": {
+    "brutal": "6px 6px 0px 0px rgba(234, 179, 8, 1)",
+    "brutal-sm": "3px 3px 0px 0px rgba(0,0,0,1)",
+    "neo": "4px 4px 0px 0px #111c38",
+    "neo-yellow": "4px 4px 0px 0px #EAB308"
+  }
+}
