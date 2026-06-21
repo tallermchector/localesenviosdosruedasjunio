@@ -1,0 +1,15 @@
+{
+  "recomendado": "Opción A",
+  "justificacion": "La Opción A (Industrial Neo-Brutalism) capitaliza la fuerza natural de la tipografía 'Anton' y los colores de alto contraste (Navy y Yellow). En el rubro logístico B2B, transmitir solidez, transparencia ('no bullshit') y estructura es clave. Las otras opciones suavizan demasiado el impacto visual. El neo-brutalismo con bordes rectos alinea el software visualmente con la tangibilidad de los paquetes y los vehículos de la flota.",
+  "coloresFijos": {
+    "primary": "#1E3A8A",
+    "secondary": "#3B82F6",
+    "tertiary": "#EAB308",
+    "surface": "#F8FAFC"
+  },
+  "tipografiaFija": {
+    "display": "Anton",
+    "subhead": "Bebas Neue",
+    "body": "Inter"
+  }
+}
