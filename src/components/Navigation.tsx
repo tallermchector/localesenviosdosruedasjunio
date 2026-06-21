@@ -391,15 +391,6 @@ export function Navigation() {
             >
               <WhatsAppIcon className="w-5 h-5" />
             </a>
-
-            <Link
-              href="/contacto"
-              className={`btn btn-primary flex items-center gap-2 text-base px-4 rounded-lg transition-all duration-200 active:scale-95 shadow-md lg:text-xl lg:px-6 lg:shadow-[4px_4px_0px_rgba(0,0,0,0.1)] ${scrolled ? "h-9 lg:h-10" : "h-10 lg:h-12"
-                }`}
-            >
-              <Calculator className="w-5 h-5" />
-              <span className="hidden sm:inline">Cotizar Envío</span>
-            </Link>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="md:hidden flex items-center text-white hover:text-accent transition-colors duration-200 p-2 -mr-2"
@@ -579,15 +570,6 @@ export function Navigation() {
                     <WhatsAppIcon className="w-6 h-6" />
                     WhatsApp
                   </a>
-
-                  <Link
-                    href="/contacto"
-                    onClick={closeMobileMenu}
-                    className="btn btn-primary w-full h-12 rounded-xl text-lg justify-center gap-2"
-                  >
-                    <Calculator className="w-5 h-5" />
-                    Cotizar Envío
-                  </Link>
                 </div>
               </motion.div>
             </motion.div>
