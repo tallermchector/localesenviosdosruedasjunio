@@ -12,7 +12,7 @@ export function Footer() {
           {/* Columna de marca */}
           <div className="flex flex-col items-start">
             <div className="relative h-[50px] w-[50px] mb-4 transition-transform hover:scale-105 border-2 border-secondary bg-white p-1 shadow-hard-secondary">
-              <Image src="/logo_envios.webp" alt="Envíos DosRuedas Logo" fill className="object-contain" />
+              <Image src="/LogoEnviosDosRuedas.webp" alt="Envíos DosRuedas Logo" fill className="object-contain" />
             </div>
             <h3 className="text-white mb-0 text-3xl font-title tracking-[0.02em] uppercase">Envíos DosRuedas</h3>
             <p className="text-secondary text-lg mb-6 tracking-[0.05em] font-subtitle uppercase bg-primary px-2 py-1 border border-secondary mt-2">TU SOLUCIÓN CONFIABLE</p>

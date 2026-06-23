@@ -159,14 +159,14 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 relative z-10 group">
             <div className="relative h-10 w-10 md:h-12 md:w-12 overflow-hidden border-2 border-secondary bg-white flex-shrink-0 transition-transform duration-300 group-hover:scale-110 shadow-hard-secondary p-1">
-              <Image src="/logo_envios.webp" alt="Envíos DosRuedas Logo" fill className="object-contain" priority />
+              <Image src="/LogoEnviosDosRuedas.webp" alt="Envíos DosRuedas Logo" fill className="object-contain" priority />
             </div>
             <div className="flex flex-col justify-center">
               <span className="font-title text-secondary text-2xl md:text-3xl tracking-[0.02em] uppercase leading-none group-hover:text-white transition-colors duration-300">
-                DOSRUEDAS
+                ENVIOS DOSRUEDAS
               </span>
               <span className="text-white text-[10px] md:text-xs font-subtitle uppercase tracking-[1px] md:tracking-[2px] mt-0.5 opacity-90">
-                Logística E-Commerce
+                TU SOLUCION CONFIABLE
               </span>
             </div>
           </Link>
@@ -220,7 +220,7 @@ export function Navigation() {
               <div className="flex items-center justify-between p-5 border-b-4 border-secondary bg-primary">
                 <div className="flex items-center gap-3">
                   <div className="relative h-12 w-12 overflow-hidden border-2 border-secondary bg-white flex-shrink-0 shadow-hard-secondary p-1">
-                    <Image src="/logo_envios.webp" alt="Envíos DosRuedas Logo" fill className="object-contain" />
+                    <Image src="/LogoEnviosDosRuedas.webp" alt="Envíos DosRuedas Logo" fill className="object-contain" />
                   </div>
                   <div className="flex flex-col">
                     <span className="font-title text-secondary text-2xl leading-none uppercase tracking-[0.02em]">
