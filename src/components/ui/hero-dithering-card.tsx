@@ -19,7 +19,7 @@ export function HeroDitheringCard() {
         onMouseLeave={() => setIsHovered(false)}
       >
         {/* Contenedor adaptado a la estética Brutalista del repositorio */}
-        <div className="relative overflow-hidden rounded-[32px] border-4 border-black dark:border-white bg-card dark:bg-slate-800 shadow-brutal dark:shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] min-h-[500px] md:min-h-[600px] flex flex-col items-center justify-center p-4 md:p-6 text-center transition-all duration-300">
+        <div className="relative overflow-hidden rounded-none-[32px] border-4 border-black dark:border-white bg-card dark:bg-slate-800 shadow-brutal dark:shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] min-h-[500px] md:min-h-[600px] flex flex-col items-center justify-center p-4 md:p-6 text-center transition-all duration-300">
 
           {/* Fondo interactivo con Shader Dithering */}
           <Suspense fallback={<div className="absolute inset-0 bg-muted/20 animate-pulse" />}>
@@ -40,10 +40,10 @@ export function HeroDitheringCard() {
           <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
 
             {/* Badge superior */}
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border-2 border-black dark:border-white bg-light dark:bg-slate-700 px-4 py-1.5 text-sm md:text-base font-bold text-black dark:text-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)]">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-none border-2 border-black dark:border-white bg-light dark:bg-slate-700 px-4 py-1.5 text-sm md:text-base font-bold text-black dark:text-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)]">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-none bg-primary opacity-75"></span>
+                <span className="relative inline-flex rounded-none h-2 w-2 bg-primary"></span>
               </span>
               Envíos en Dos Ruedas
             </div>
@@ -63,7 +63,7 @@ export function HeroDitheringCard() {
 
             {/* Botón con diseño e interacciones brutalistas */}
             <button
-              className="group relative inline-flex min-h-[56px] w-full max-w-[280px] items-center justify-center gap-3 overflow-hidden rounded-xl border-4 border-black dark:border-white bg-primary dark:bg-accent px-8 md:px-12 text-lg font-black text-primary-foreground dark:text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all duration-200 hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none"
+              className="group relative inline-flex min-h-[56px] w-full max-w-[280px] items-center justify-center gap-3 overflow-hidden rounded-none border-4 border-black dark:border-white bg-primary dark:bg-accent px-8 md:px-12 text-lg font-black text-primary-foreground dark:text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] transition-all duration-200 hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none"
               aria-label="Cotizar Envío"
             >
               <span className="relative z-10">Cotizar Envío</span>
