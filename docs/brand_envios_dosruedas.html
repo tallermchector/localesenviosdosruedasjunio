@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ENVÍOS DOSRUEDAS | Brand Book</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Anton:wght@100..900&family=Bebas+Neue:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#313030",
+                    "surface-tint": "#3455c4",
+                    "tertiary-fixed-dim": "#b6c4ff",
+                    "surface-variant": "#e5e2e1",
+                    "surface": "#fcf9f8",
+                    "secondary-fixed": "#f8e600",
+                    "primary": "#002276",
+                    "tertiary-container": "#293d7f",
+                    "on-error": "#ffffff",
+                    "surface-container": "#f0eded",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#001550",
+                    "on-primary-fixed-variant": "#133bab",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#6d6400",
+                    "surface-bright": "#fcf9f8",
+                    "primary-fixed": "#dce1ff",
+                    "on-primary-container": "#95a9ff",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-container": "#98aaf4",
+                    "tertiary-fixed": "#dce1ff",
+                    "outline-variant": "#c4c5d5",
+                    "surface-dim": "#dcd9d9",
+                    "tertiary": "#0f2668",
+                    "primary-fixed-dim": "#b7c4ff",
+                    "surface-container-high": "#eae7e7",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-secondary-fixed": "#1f1c00",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#b7c4ff",
+                    "surface-container-low": "#f6f3f2",
+                    "primary-container": "#0635a6",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed-dim": "#d9c900",
+                    "on-tertiary-fixed-variant": "#2f4285",
+                    "secondary-container": "#f5e300",
+                    "on-background": "#1c1b1b",
+                    "on-surface": "#1c1b1b",
+                    "on-surface-variant": "#444653",
+                    "on-primary": "#ffffff",
+                    "outline": "#747685",
+                    "secondary": "#686000",
+                    "on-secondary-fixed-variant": "#4e4800",
+                    "on-primary-fixed": "#001552",
+                    "background": "#fcf9f8"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "stack-lg": "48px",
+                    "stack-sm": "8px",
+                    "stack-md": "24px",
+                    "gutter": "16px",
+                    "margin-mobile": "20px",
+                    "unit": "4px"
+            },
+            "fontFamily": {
+                    "data-display": ["Bebas Neue"],
+                    "headline-lg": ["Anton"],
+                    "label-caps": ["Bebas Neue"],
+                    "body-lg": ["Bebas Neue"],
+                    "headline-xl": ["Anton"],
+                    "headline-lg-mobile": ["Anton"],
+                    "subtitle-lg": ["Bebas Neue"]
+            },
+            "fontSize": {
+                    "data-display": ["32px", {"lineHeight": "32px", "letterSpacing": "0.05em", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "48px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "label-caps": ["14px", {"lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "400"}],
+                    "body-lg": ["20px", {"lineHeight": "24px", "letterSpacing": "0.03em", "fontWeight": "400"}],
+                    "headline-xl": ["80px", {"lineHeight": "80px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["36px", {"lineHeight": "36px", "fontWeight": "400"}],
+                    "subtitle-lg": ["24px", {"lineHeight": "28px", "letterSpacing": "0.05em", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Bebas Neue', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .speed-line {
+            height: 4px;
+            background-color: #f8e600;
+            margin-bottom: 4px;
+        }
+        .hard-offset-blue { box-shadow: 4px 4px 0px 0px #002276; }
+        .hard-offset-yellow { box-shadow: 4px 4px 0px 0px #f8e600; }
+        
+        pre {
+            background: #1c1b1b;
+            color: #f8e600;
+            padding: 1rem;
+            border-left: 4px solid #f8e600;
+            overflow-x: auto;
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .bento-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky z-50 bg-primary dark:bg-primary border-b-4 border-secondary dark:border-secondary-fixed flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4">
+<div class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-secondary dark:text-secondary-fixed tracking-tighter uppercase">
+            ENVÍOS DOSRUEDAS
+        </div>
+<nav class="hidden md:flex gap-gutter font-bebas-neue text-label-caps items-center">
+<a class="text-secondary-fixed border-b-2 border-secondary-fixed pb-1 hover:bg-secondary hover:text-primary transition-colors duration-200" href="#mision">Misión</a>
+<a class="text-surface dark:text-surface-variant hover:bg-secondary hover:text-primary transition-colors duration-200" href="#identidad">Identidad</a>
+<a class="text-surface dark:text-surface-variant hover:bg-secondary hover:text-primary transition-colors duration-200" href="#paleta">Paleta</a>
+<a class="text-surface dark:text-surface-variant hover:bg-secondary hover:text-primary transition-colors duration-200" href="#tipografia">Tipografía</a>
+<a class="text-surface dark:text-surface-variant hover:bg-secondary hover:text-primary transition-colors duration-200" href="#slogans">Slogans</a>
+</nav>
+<button class="bg-secondary text-primary px-6 py-2 font-bebas-neue font-bold uppercase transition-transform active:translate-y-0.5">
+            Contratar
+        </button>
+</header>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative h-[819px] flex items-center bg-primary overflow-hidden">
+<div class="absolute inset-0 opacity-40">
+<div class="w-full h-full bg-cover bg-center" data-alt="A high-speed, dynamic close-up of a modern delivery motorcycle wheels spinning on a coastal road in Mar del Plata. The style is cinematic with high contrast, deep shadows, and intense solar lighting. The color palette emphasizes Egyptian Blue and Sunbeam Yellow, capturing the kinetic energy of rapid logistics." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDOWb8cUTFE3U_KeXbkCoyo_xP9gdYWPAmzrtsZKVsiun-2vaLIqkXxhi9036lP9EYboXWOmzNL9FkqX_ARpVyXOrs6s8MI9uR--LpOwPdzrVXIHLv9NWQRWFT6vO-G0yZ6UIGC5QddXLC7k12s5-w4yucgzZeMXISi9tUfRICYPFcappCcmJPOaGmA34orcOtLKoX1-U-yodEeAEWRXjxswz2e2dMEW8yif-b4b-WnPxFf2yENad2nw-wmnpB5X-cXADPoTgsT2yfb')"></div>
+</div>
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop w-full text-white">
+<div class="flex flex-col gap-unit">
+<div class="speed-line w-24"></div>
+<div class="speed-line w-16"></div>
+<div class="speed-line w-8"></div>
+</div>
+<h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl uppercase leading-none mt-stack-sm">
+                    ENVÍOS<br/><span class="text-secondary-fixed">DOSRUEDAS</span>
+</h1>
+<p class="font-subtitle-lg text-subtitle-lg mt-stack-md uppercase tracking-widest max-w-xl">
+                    Tu solución confiable
+                </p>
+<div class="mt-stack-lg flex gap-gutter">
+<button class="bg-secondary-fixed text-primary px-8 py-4 font-bebas-neue text-subtitle-lg uppercase font-bold hard-offset-blue hover:translate-y-1 hover:shadow-none transition-all">
+                        Explorar Marca
+                    </button>
+</div>
+</div>
+</section>
+<!-- Identity Section -->
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-surface" id="identidad">
+<div class="bento-grid">
+<div class="col-span-12 md:col-span-6 flex flex-col justify-center">
+<h2 class="font-headline-lg text-headline-lg uppercase text-primary mb-stack-md">Nuestra Identidad</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-stack-md">
+                        ENVÍOS DOSRUEDAS es la solución confiable en servicios de mensajería y delivery en Mar del Plata. Nuestra marca representa rapidez, seguridad, economía y un servicio con calidez humana.
+                    </p>
+<div class="grid grid-cols-2 gap-gutter mt-stack-md">
+<div class="border-l-4 border-primary p-4 bg-surface-container">
+<span class="font-label-caps text-primary block">Rapidez</span>
+<span class="font-data-display text-data-display uppercase">Veloz</span>
+</div>
+<div class="border-l-4 border-primary p-4 bg-surface-container">
+<span class="font-label-caps text-primary block">Seguridad</span>
+<span class="font-data-display text-data-display uppercase">Firme</span>
+</div>
+<div class="border-l-4 border-primary p-4 bg-surface-container">
+<span class="font-label-caps text-primary block">Economía</span>
+<span class="font-data-display text-data-display uppercase">Eficiente</span>
+</div>
+<div class="border-l-4 border-primary p-4 bg-surface-container">
+<span class="font-label-caps text-primary block">Calidez</span>
+<span class="font-data-display text-data-display uppercase">Humano</span>
+</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-6">
+<div class="w-full h-full min-h-[400px] bg-cover bg-center border-4 border-primary hard-offset-yellow" data-alt="A professional courier wearing an Egyptian Blue uniform, smiling warmly while handing a package to a customer at a modern apartment doorstep. The scene is bright with morning sunlight, highlighting the 'calidez humana' and professional reliability. The aesthetic is clean, high-contrast, and editorial." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCjzuATGSEf2LMW7FDAnnGTv2janovtCDwvr_XcJ2aIG36Zv8bLIoXtCEHTflpWY9cc73JuA7OugRWAJvsNDWUZk9TPOEojdC81xO_imbFilNmSiADkxNwiXLIJXxSmfrqnc7s0qL8vy6Lrwj1uT_it3UYOn680jxHB2R_Ty2FTxK-MwcGSASPUpD1s_-jwOno7Fc6ZXzgCdPHcwavmytS67h_tnfpV3ovtBxGr1x1Vy1aKRj1MTotBegEcvAwCtrr1YncHlYOG1UmK')"></div>
+</div>
+</div>
+</section>
+<!-- Color Palette -->
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-inverse-surface" id="paleta">
+<h2 class="font-headline-lg text-headline-lg uppercase text-secondary-fixed mb-stack-lg text-center">Paleta de Colores</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Color 1 -->
+<div class="bg-surface flex flex-col border-b-8 border-primary overflow-hidden">
+<div class="h-64 bg-[#0635A6]"></div>
+<div class="p-stack-md">
+<h3 class="font-subtitle-lg text-subtitle-lg uppercase text-primary">Egyptian Blue</h3>
+<div class="flex flex-col mt-stack-sm">
+<span class="font-label-caps text-on-surface-variant">HEX: #0635A6</span>
+<span class="font-label-caps text-on-surface-variant">RGB: (6, 53, 166)</span>
+</div>
+</div>
+</div>
+<!-- Color 2 -->
+<div class="bg-surface flex flex-col border-b-8 border-secondary-fixed overflow-hidden">
+<div class="h-64 bg-[#FFEC00]"></div>
+<div class="p-stack-md">
+<h3 class="font-subtitle-lg text-subtitle-lg uppercase text-secondary">Sunbeam Yellow</h3>
+<div class="flex flex-col mt-stack-sm">
+<span class="font-label-caps text-on-surface-variant">HEX: #FFEC00</span>
+<span class="font-label-caps text-on-surface-variant">RGB: (255, 236, 0)</span>
+</div>
+</div>
+</div>
+<!-- Color 3 -->
+<div class="bg-surface flex flex-col border-b-8 border-outline-variant overflow-hidden">
+<div class="h-64 bg-[#FFFFFF]"></div>
+<div class="p-stack-md">
+<h3 class="font-subtitle-lg text-subtitle-lg uppercase text-on-surface">Pure White</h3>
+<div class="flex flex-col mt-stack-sm">
+<span class="font-label-caps text-on-surface-variant">HEX: #FFFFFF</span>
+<span class="font-label-caps text-on-surface-variant">RGB: (255, 255, 255)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Typography -->
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-surface-container" id="tipografia">
+<div class="flex flex-col gap-stack-lg">
+<h2 class="font-headline-lg text-headline-lg uppercase text-primary border-b-4 border-primary pb-2 w-fit">Tipografía</h2>
+<div class="bento-grid">
+<div class="col-span-12 md:col-span-6 bg-white p-stack-md border-2 border-primary">
+<span class="font-label-caps text-primary text-sm mb-4 block">Headline Typography</span>
+<h3 class="font-headline-xl text-headline-xl leading-none uppercase">ANTON</h3>
+<p class="font-body-lg text-body-lg mt-4 text-on-surface-variant">
+                            Impactante, audaz, moderno. Se utiliza para encabezados principales, banners y slogans destacados que capturan la atención inmediata.
+                        </p>
+<div class="mt-stack-md space-y-2">
+<div class="text-4xl font-headline-lg">ABCDEFGHIJKLM</div>
+<div class="text-4xl font-headline-lg">NOPQRSTUVWXYZ</div>
+<div class="text-4xl font-headline-lg">0123456789</div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-6 bg-primary text-white p-stack-md border-2 border-secondary-fixed">
+<span class="font-label-caps text-secondary-fixed text-sm mb-4 block">Data & Subtitle Typography</span>
+<h3 class="font-data-display text-[80px] leading-none uppercase">BEBAS NEUE</h3>
+<p class="font-body-lg text-body-lg mt-4 text-surface-variant">
+                            Limpio, condensado, altamente legible. Ideal para subtítulos, información técnica, etiquetas de datos y navegación del sitio.
+                        </p>
+<div class="mt-stack-md space-y-2">
+<div class="text-4xl font-data-display tracking-widest">ABCDEFGHIJKLM</div>
+<div class="text-4xl font-data-display tracking-widest">NOPQRSTUVWXYZ</div>
+<div class="text-4xl font-data-display tracking-widest">0123456789</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Slogans Section -->
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-primary text-white relative overflow-hidden" id="slogans">
+<div class="absolute -right-20 top-0 opacity-10">
+<span class="font-headline-xl text-[200px] leading-none rotate-90 inline-block">DOSRUEDAS</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-secondary-fixed mb-stack-lg relative z-10">Frases Fuerza</h2>
+<div class="flex flex-col gap-gutter relative z-10">
+<div class="group flex items-center gap-stack-md border-b-2 border-on-primary-container py-4 hover:bg-secondary-fixed hover:text-primary transition-all duration-300 px-4 cursor-default">
+<span class="font-data-display text-4xl">01</span>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase tracking-tight">"Tu solución confiable."</h3>
+</div>
+<div class="group flex items-center gap-stack-md border-b-2 border-on-primary-container py-4 hover:bg-secondary-fixed hover:text-primary transition-all duration-300 px-4 cursor-default">
+<span class="font-data-display text-4xl">02</span>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase tracking-tight">"Tus ventas en las mejores manos."</h3>
+</div>
+<div class="group flex items-center gap-stack-md border-b-2 border-on-primary-container py-4 hover:bg-secondary-fixed hover:text-primary transition-all duration-300 px-4 cursor-default">
+<span class="font-data-display text-4xl">03</span>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase tracking-tight">"Conectamos tu negocio con toda la ciudad."</h3>
+</div>
+<div class="group flex items-center gap-stack-md border-b-2 border-on-primary-container py-4 hover:bg-secondary-fixed hover:text-primary transition-all duration-300 px-4 cursor-default">
+<span class="font-data-display text-4xl">04</span>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase tracking-tight">"Logística humana y eficiente para Mar del Plata."</h3>
+</div>
+<div class="group flex items-center gap-stack-md border-b-2 border-on-primary-container py-4 hover:bg-secondary-fixed hover:text-primary transition-all duration-300 px-4 cursor-default">
+<span class="font-data-display text-4xl">05</span>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase tracking-tight">"Entregas rápidas. Clientes felices."</h3>
+</div>
+</div>
+</section>
+<!-- Technical Section -->
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-surface" id="tecnico">
+<h2 class="font-headline-lg text-headline-lg uppercase text-primary mb-stack-md">Aplicación Técnica</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start">
+<div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md">
+                        Para mantener la consistencia en todas las plataformas digitales, utilice estas variables CSS estándar. Esto garantiza que cada implementación de ENVÍOS DOSRUEDAS se sienta unificada y profesional.
+                    </p>
+<div class="flex flex-col gap-unit">
+<div class="speed-line w-full bg-primary opacity-20"></div>
+<div class="speed-line w-3/4 bg-primary opacity-20"></div>
+<div class="speed-line w-1/2 bg-primary opacity-20"></div>
+</div>
+</div>
+<div class="bg-inverse-surface rounded-none p-gutter border-r-8 border-secondary-fixed hard-offset-blue">
+<div class="flex justify-between items-center mb-4">
+<span class="font-label-caps text-secondary-fixed">CSS VARIABLES</span>
+<div class="flex gap-2">
+<div class="w-3 h-3 rounded-full bg-error"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-fixed"></div>
+<div class="w-3 h-3 rounded-full bg-primary"></div>
+</div>
+</div>
+<pre class="font-mono text-sm leading-relaxed">:root {
+    /* Colores Principales */
+    --color-primary: #0635A6;
+    --color-secondary: #FFEC00;
+    --color-white: #FFFFFF;
+
+    /* Tipografías */
+    --font-title: 'Anton', sans-serif;
+    --font-subtitle: 'Bebas Neue', sans-serif;
+}</pre>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-lg bg-primary dark:bg-inverse-surface border-t-4 border-secondary flex flex-col md:flex-row justify-between items-center px-margin-desktop gap-gutter font-bebas-neue text-label-caps text-secondary-fixed">
+<div class="font-headline-lg-mobile text-headline-lg-mobile text-secondary-container uppercase">
+            ENVÍOS DOSRUEDAS
+        </div>
+<div class="flex flex-col items-center md:items-end gap-2">
+<div class="flex gap-gutter">
+<a class="text-surface-variant hover:text-secondary-fixed uppercase transition-all" href="#">Privacidad</a>
+<a class="text-surface-variant hover:text-secondary-fixed uppercase transition-all" href="#">Términos</a>
+<a class="text-surface-variant hover:text-secondary-fixed uppercase transition-all" href="#">Contacto</a>
+</div>
+<p class="text-surface-variant opacity-60">
+                © 2024 ENVÍOS DOSRUEDAS - VELOCIDAD Y CONFIANZA EN MAR DEL PLATA
+            </p>
+</div>
+</footer>
+<script>
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple active state observer for navigation
+        const observerOptions = {
+            root: null,
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    document.querySelectorAll('nav a').forEach(link => {
+                        link.classList.remove('text-secondary-fixed', 'border-b-2', 'border-secondary-fixed', 'pb-1');
+                        link.classList.add('text-surface');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('text-secondary-fixed', 'border-b-2', 'border-secondary-fixed', 'pb-1');
+                            link.classList.remove('text-surface');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section[id]').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body></html>
