@@ -13,65 +13,65 @@ export function Vision() {
             <span className="pulse-dot" /> Partner Logístico Especializado
           </div>
 
-          <h2 className="font-[Anton] text-[48px] leading-[48px] tracking-[0.02em] text-primary uppercase mb-[16px]">
+          <h2 className="font-title text-[48px] leading-[48px] tracking-[0.02em] text-primary uppercase mb-[16px]">
             Nuestra Visión Logística
           </h2>
-          <p className="font-[Bebas_Neue" text-[20px] leading-[24px] tracking-[0.03em] text-on-surface-variant max-w-[700px]">
-            Transformamos tus costos fijos en solutions flexibles que acompañan el crecimiento de tu negocio.
+          <p className="font-subtitle text-[20px] leading-[24px] tracking-[0.03em] text-primary/70 max-w-[700px]">
+            Transformamos tus costos fijos en soluciones flexibles que acompañan el crecimiento de tu negocio.
           </p>
 
           <div className="grid gap-[16px] pt-[16px]">
             <div className="flex items-start gap-[16px]">
-              <div className="flex items-center justify-center w-[16px] h-[16px] bg-primary text-secondary rounded-[0] text-2xl shrink-0">
+              <div className="flex items-center justify-center w-[48px] h-[48px] bg-primary text-secondary text-2xl shrink-0">
                 <Bolt className="w-8 h-8" />
               </div>
               <div className="feature-text">
-                <h4 className="font-[Anton] text-[24px] leading-[24px] tracking-[0.02em] text-primary mb-[4px]">
+                <h4 className="font-title text-[24px] leading-[24px] tracking-[0.02em] text-primary mb-[4px]">
                   Entregas a Tiempo
                 </h4>
-                <p className="font-[Bebas_NeuE] text-[14px] leading-[20px] tracking-[0.03em] text-on-surface-variant">
+                <p className="font-subtitle text-[14px] leading-[20px] tracking-[0.03em] text-primary/60">
                   Puntualidad garantizada en cada envío
                 </p>
               </div>
             </div>
 
             <div className="flex items-start gap-[16px]">
-              <div className="flex items-center justify-center w-[16px] h-[16px] bg-primary text-secondary rounded-[0] text-2xl shrink-0">
+              <div className="flex items-center justify-center w-[48px] h-[48px] bg-secondary text-primary text-2xl shrink-0">
                 <ShieldHalf className="w-8 h-8" />
               </div>
               <div className="feature-text">
-                <h4 className="font-[Anton] text-[24px] leading-[24px] tracking-[0.02em] text-primary mb-[4px]">
+                <h4 className="font-title text-[24px] leading-[24px] tracking-[0.02em] text-primary mb-[4px]">
                   Envíos Seguros
                 </h4>
-                <p className="font-[Bebas_NeuE] text-[14px] leading-[20px] tracking-[0.03em] text-on-surface-variant">
+                <p className="font-subtitle text-[14px] leading-[20px] tracking-[0.03em] text-primary/60">
                   Protección total de tus paquetes
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-[16px] pt-[24px] border-t border-secondary/20">
+          <div className="grid grid-cols-3 gap-[16px] pt-[24px] border-t-2 border-secondary/20">
             <div className="metric flex flex-col gap-[4px]">
-              <strong className="font-[Anton] text-[48px] leading-[48px] tracking-[0.02em] text-secondary block">
+              <strong className="font-title text-[48px] leading-[48px] tracking-[0.02em] text-secondary block">
                 +5.000
               </strong>
-              <span className="font-[Bebas_NeuE] text-[14px] leading-[20px] tracking-[0.03em] text-on-surface-variant uppercase">
+              <span className="font-subtitle text-[14px] leading-[20px] tracking-[0.03em] text-primary/60 uppercase">
                 Confianza local
               </span>
             </div>
             <div className="metric flex flex-col gap-[4px]">
-              <strong className="font-[Anton] text-[48px] leading-[48px] tracking-[0.02em] text-secondary block">
+              <strong className="font-title text-[48px] leading-[48px] tracking-[0.02em] text-secondary block">
                 7 Años
               </strong>
-              <span className="font-[Bebas_NeuE] text-[14px] leading-[20px] tracking-[0.03em] text-on-surface-variant uppercase">
+              <span className="font-subtitle text-[14px] leading-[20px] tracking-[0.03em] text-primary/60 uppercase">
                 Innovación
               </span>
             </div>
             <div className="metric flex flex-col gap-[4px]">
-              <strong className="font-[Anton] text-[48px] leading-[48px] tracking-[0.02em] text-secondary block">
+              <strong className="font-title text-[48px] leading-[48px] tracking-[0.02em] text-secondary block">
                 Flota
               </strong>
-              <span className="font-[Bebas_NeuE] text-[14px] leading-[20px] tracking-[0.03em] text-on-surface-variant uppercase">
+              <span className="font-subtitle text-[14px] leading-[20px] tracking-[0.03em] text-primary/60 uppercase">
                 Exclusiva
               </span>
             </div>
@@ -79,7 +79,7 @@ export function Vision() {
         </div>
 
         <div className="relative">
-          <div className="relative p-[16px] bg-white border-2 border-primary">
+          <div className="relative p-[16px] bg-white border-2 border-primary shadow-hard-primary">
             <div className="relative w-full h-[96px] overflow-hidden">
               <Image
                 src="/cards/card_mapa.webp"
@@ -89,12 +89,12 @@ export function Vision() {
                 className="object-cover"
               />
             </div>
-            <div className="absolute -top-4 -right-4 w-[16px] h-[16px] bg-[radial-gradient(circle,rgba(59,130,246,0.4)_0%,transparent_70%)] z-0" />
-            <div className="absolute -bottom-[16px] -left-[16px] bg-primary text-white px-[8px] py-[6px] flex items-center gap-[8px]">
-              <span className="font-[Bebas_NeuE] text-[16px] leading-[20px] tracking-[0.03em] uppercase max-w-[150px] leading-none">
+            <div className="absolute -top-[16px] -right-[16px] w-[16px] h-[16px] bg-secondary" />
+            <div className="absolute -bottom-[16px] -left-[16px] bg-primary text-secondary px-[8px] py-[6px] flex items-center gap-[8px]">
+              <span className="font-subtitle text-[16px] leading-[20px] tracking-[0.03em] uppercase max-w-[150px]">
                 Conocé más sobre nosotros
               </span>
-              <button className="w-[10px] h-[10px] rounded-[0] bg-accent text-dark flex items-center justify-center text-[4xl] transition-none hover:scale-[1.15] hover:rotate-[12deg] hover:bg-light hover:text-primary">
+              <button className="w-[32px] h-[32px] bg-secondary text-primary flex items-center justify-center transition-none hover:bg-primary hover:text-secondary hover:scale-110">
                 <Play className="fill-current w-5 h-5 ml-1" />
               </button>
             </div>

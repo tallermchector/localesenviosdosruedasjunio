@@ -2,51 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Brand Book: ENVÍOS DOSRUEDAS ── */
+/* Colores: Egyptian Blue #0635A6 · Sunbeam Yellow #FFEC00 · White #FFFFFF */
+/* Tipografías: Anton (títulos) · Bebas Neue (subtítulos/datos) */
+
 @layer base {
   :root {
-    --background: 16 33% 98%; /* #fcf9f8 */
-    --foreground: 0 2% 11%; /* #1c1b1b */
-    --card: 16 33% 98%;
-    --card-foreground: 0 2% 11%;
-    --popover: 16 33% 98%;
-    --popover-foreground: 0 2% 11%;
-    --primary: 223 100% 23%; /* #002276 */
-    --primary-foreground: 0 0% 100%;
-    --secondary: 55 100% 48%; /* #f5e300 */
-    --secondary-foreground: 0 2% 11%;
-    --muted: 15 15% 90%;
-    --muted-foreground: 220 10% 40%;
-    --accent: 55 100% 48%;
-    --accent-foreground: 0 2% 11%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 223 100% 23%; /* Deep Navy */
-    --input: 223 100% 23%;
-    --ring: 55 100% 48%; /* Accent */
-    --radius: 0rem; /* Flat */
+    /* Colores exactos del Brand Book */
+    --color-primary: #0635A6;
+    --color-secondary: #FFEC00;
+    --color-white: #FFFFFF;
+
+    /* Tailwind HSL mappings (aproximados para compatibilidad) */
+    --background: 220 33% 98%; /* #f5f5fa blanco con tinte azulado */
+    --foreground: 223 100% 23%; /* Mismo tono que primary para texto */
+    --card: 0 0% 100%;
+    --card-foreground: 223 100% 23%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 223 100% 23%;
+    --primary: 223 100% 33%; /* #0635A6 Egyptian Blue */
+    --primary-foreground: 55 100% 48%; /* #FFEC00 sobre fondo primario */
+    --secondary: 55 100% 50%; /* #FFEC00 Sunbeam Yellow */
+    --secondary-foreground: 223 100% 33%; /* #0635A6 sobre fondo secundario */
+    --muted: 220 20% 95%;
+    --muted-foreground: 223 30% 45%;
+    --accent: 55 100% 50%; /* = secondary */
+    --accent-foreground: 223 100% 33%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 223 100% 33%; /* primary */
+    --input: 223 100% 33%;
+    --ring: 55 100% 50%; /* secondary */
+    --radius: 0rem; /* Flat — neo-brutalista */
   }
 
   .dark {
-    /* Enforcing Light Mode Only based on memory guidelines */
-    --background: 16 33% 98%;
-    --foreground: 0 2% 11%;
-    --card: 16 33% 98%;
-    --card-foreground: 0 2% 11%;
-    --popover: 16 33% 98%;
-    --popover-foreground: 0 2% 11%;
-    --primary: 223 100% 23%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 55 100% 48%;
-    --secondary-foreground: 0 2% 11%;
-    --muted: 15 15% 90%;
-    --muted-foreground: 220 10% 40%;
-    --accent: 55 100% 48%;
-    --accent-foreground: 0 2% 11%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 223 100% 23%;
-    --input: 223 100% 23%;
-    --ring: 55 100% 48%;
+    /* Light Mode Only — se mantiene igual */
+    --background: 220 33% 98%;
+    --foreground: 223 100% 23%;
+    --card: 0 0% 100%;
+    --card-foreground: 223 100% 23%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 223 100% 23%;
+    --primary: 223 100% 33%;
+    --primary-foreground: 55 100% 48%;
+    --secondary: 55 100% 50%;
+    --secondary-foreground: 223 100% 33%;
+    --muted: 220 20% 95%;
+    --muted-foreground: 223 30% 45%;
+    --accent: 55 100% 50%;
+    --accent-foreground: 223 100% 33%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 223 100% 33%;
+    --input: 223 100% 33%;
+    --ring: 55 100% 50%;
   }
 }
 
@@ -58,15 +68,15 @@
     @apply scroll-smooth;
   }
   body {
-    @apply bg-background text-foreground font-body antialiased pt-[90px] overflow-x-hidden;
+    @apply bg-white text-primary font-subtitle antialiased pt-[90px] overflow-x-hidden;
   }
   h1, h2, h3, h4 {
-    @apply font-display uppercase leading-tight;
+    @apply font-title uppercase leading-tight;
   }
   h1 { @apply text-[clamp(3rem,8vw,6rem)] tracking-[0.02em]; }
   h2 { @apply text-[clamp(2.5rem,5vw,4rem)] text-primary; }
-  h3 { @apply font-subhead text-[clamp(1.8rem,3vw,2.5rem)] tracking-wider; }
-  p { @apply text-lg text-slate-700 leading-relaxed; }
+  h3 { @apply font-subtitle text-[clamp(1.8rem,3vw,2.5rem)] tracking-[0.05em]; }
+  p { @apply font-subtitle text-lg text-primary/70 leading-relaxed tracking-[0.03em]; }
 }
 
 @layer components {
@@ -75,56 +85,56 @@
   }
 
   .btn {
-    @apply inline-flex items-center justify-center gap-3 font-subhead text-2xl tracking-wider uppercase px-8 py-3 transition-all duration-300 cursor-pointer rounded-none border-2;
+    @apply inline-flex items-center justify-center gap-3 font-subtitle text-2xl tracking-[0.05em] uppercase px-8 py-3 transition-all duration-300 cursor-pointer rounded-none border-2;
   }
 
   .btn-primary {
-    @apply bg-accent text-primary border-primary shadow-[4px_4px_0px_0px_#002276];
+    @apply bg-secondary text-primary border-primary shadow-hard-primary;
   }
   .btn-primary:hover {
-    @apply bg-primary text-accent border-accent shadow-[4px_4px_0px_0px_#f5e300] -translate-x-[2px] -translate-y-[2px];
+    @apply bg-primary text-secondary border-secondary shadow-hard-secondary -translate-x-[2px] -translate-y-[2px];
   }
 
   .btn-secondary {
-    @apply bg-transparent text-primary border-primary relative overflow-hidden z-10 shadow-[4px_4px_0px_0px_#002276];
+    @apply bg-white text-primary border-primary shadow-hard-primary relative overflow-hidden z-10;
+  }
+  .btn-secondary:hover {
+    @apply text-secondary shadow-hard-secondary -translate-x-[2px] -translate-y-[2px] border-primary;
   }
   .btn-secondary::after {
     content: ''; @apply absolute bottom-0 left-0 w-full h-0 bg-primary transition-all duration-300 -z-10;
   }
-  .btn-secondary:hover {
-    @apply text-accent shadow-[4px_4px_0px_0px_#f5e300] -translate-x-[2px] -translate-y-[2px] border-primary;
-  }
   .btn-secondary:hover::after { @apply h-full; }
 
   .utility-bg {
-    background-image: 
-        linear-gradient(rgba(0, 34, 118, 0.1) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 34, 118, 0.1) 1px, transparent 1px);
+    background-image:
+        linear-gradient(rgba(6, 53, 166, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(6, 53, 166, 0.08) 1px, transparent 1px);
     background-size: 30px 30px;
     background-position: center center;
-    background-color: var(--background);
+    background-color: var(--color-white);
     background-attachment: fixed;
   }
 
   .section-badge {
-    @apply inline-flex items-center gap-2 bg-primary text-accent px-5 py-2 rounded-none font-bold font-subhead text-xl tracking-wider mb-6 border-2 border-accent transition-all hover:scale-105 hover:-translate-y-0.5 hover:shadow-brutal;
+    @apply inline-flex items-center gap-2 bg-primary text-secondary px-5 py-2 rounded-none font-subtitle text-xl tracking-[0.05em] mb-6 border-2 border-secondary transition-all hover:scale-105 hover:-translate-y-0.5 shadow-hard-secondary;
   }
 
   .pulse-dot {
-    @apply inline-block w-3 h-3 bg-accent rounded-none mr-2.5 animate-pulse-dot;
+    @apply inline-block w-3 h-3 bg-secondary rounded-none mr-2.5 animate-pulse-dot;
   }
 
-  /* Glassmorphism premium panel - removed for neo brutalism */
+  /* Neo-brutalist panel */
   .glass-panel {
-    @apply bg-primary/95 border-2 border-accent shadow-brutal transition-all duration-300;
+    @apply bg-primary/95 border-2 border-secondary shadow-hard-secondary transition-all duration-300;
   }
-  
+
   /* Hover visual glow highlight */
   .hover-glow {
     @apply transition-all duration-300;
   }
   .hover-glow:hover {
-    @apply shadow-brutal border-accent;
+    @apply shadow-hard-secondary border-secondary;
   }
 
   /* Floating animation modifier */
@@ -147,10 +157,10 @@
     transform: translateX(-100%);
     background-image: linear-gradient(
       90deg,
-      rgba(245, 227, 0, 0) 0%,
-      rgba(245, 227, 0, 0.15) 20%,
-      rgba(245, 227, 0, 0.3) 60%,
-      rgba(245, 227, 0, 0) 100%
+      rgba(255, 236, 0, 0) 0%,
+      rgba(255, 236, 0, 0.15) 20%,
+      rgba(255, 236, 0, 0.3) 60%,
+      rgba(255, 236, 0, 0) 100%
     );
     animation: shimmer 3s infinite linear;
   }
@@ -162,11 +172,11 @@
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  @apply bg-light;
+  @apply bg-white;
 }
 ::-webkit-scrollbar-thumb {
   @apply bg-primary rounded-none transition-colors duration-200;
 }
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-accent;
+  @apply bg-secondary;
 }
